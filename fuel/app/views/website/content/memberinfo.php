@@ -1,4 +1,4 @@
-<?php echo Asset::css('content/memberinfo.css')?>
+<?php echo Asset::css('website/content/memberinfo.css')?>
 
 <div class="heading">
         登録中のお客様情報
@@ -46,13 +46,13 @@
     </div>
     <div class="memberinfo-bottom">
         <div class="history button">
-            <?php echo Html::anchor('index.php/member/history','注文履歴',array('class'=>'link'))?>
+            <?php echo Html::anchor('index.php/website/member/history','注文履歴',array('class'=>'link'))?>
         </div>
         <div class="modify button">
-            <?php echo Html::anchor('index.php/member/edit','編集',array('class'=>'link'))?>
+            <?php echo Html::anchor('index.php/website/member/edit','編集',array('class'=>'link'))?>
         </div>
     </div>
 </div>
 <div class="top button">
-    <?php echo Html::anchor('index.php/top','TOPに戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/website/top','TOPに戻る',array('class'=>'link'))?>
 </div>

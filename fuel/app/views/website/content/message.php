@@ -1,4 +1,4 @@
-<?php echo Asset::css('content/message.css')?>
+<?php echo Asset::css('website/content/message.css')?>
 
 <div class="message">
     <div class="heading">
@@ -7,5 +7,5 @@
     <?php echo $messagein ?>
 </div>
 <div class="top button">
-    <?php echo Html::anchor('index.php/top','TOPに戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/website/top','TOPに戻る',array('class'=>'link'))?>
 </div>

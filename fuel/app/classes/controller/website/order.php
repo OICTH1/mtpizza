@@ -1,14 +1,14 @@
 <?php
 
-class Controller_Order Extends Controller_Page
+class Controller_Website_Order Extends Controller_Website_Page
 {
     public function before(){
             parent::before();
           if(empty(\Session::get(self::SESSION_KEY_USER_ID))){
-            return Response::redirect('index.php/auth/index/true');
+            return Response::redirect('index.php/website/auth/index/true');
           }
           if(empty(\Session::get(self::SESSION_KEY_CART))){
-            return Response::redirect('index.php/message/cartempty');
+            return Response::redirect('index.php/website/message/cartempty');
           }
     }
 
@@ -16,7 +16,7 @@ class Controller_Order Extends Controller_Page
         $data['cart'] = \Session::get(self::SESSION_KEY_CART);
         $user_id = \Session::get(self::SESSION_KEY_USER_ID);
         $data['user'] = Model_Member::find($user_id);
-        $this->template->content = View::forge('content/deliveryselect',$data);
+        $this->template->content = View::forge('website/content/deliveryselect',$data);
     }
 
     public function action_enter(){
@@ -39,13 +39,13 @@ class Controller_Order Extends Controller_Page
                 break;
         }
         \Session::set(self::SESSION_KEY_ADDRESS,$address);
-        return Response::redirect('index.php/order/check');
+        return Response::redirect('index.php/website/order/check');
     }
 
     public function action_check(){
         $data['cart'] = \Session::get(self::SESSION_KEY_CART);
         $data['address'] = \Session::get(self::SESSION_KEY_ADDRESS);
-        $this->template->content = View::forge('content/ordercheck',$data);
+        $this->template->content = View::forge('website/content/ordercheck',$data);
     }
 
 
@@ -108,7 +108,7 @@ class Controller_Order Extends Controller_Page
 
         }
         \Session::delete(self::SESSION_KEY_CART);
-        return Response::redirect('index.php/message/commit');
+        return Response::redirect('index.php/website/message/commit');
     }
 
 }

@@ -3,5 +3,5 @@
     商品が届くまでお待ちくださいませ。
 </p>
 <div class="button">
-    <?php echo Html::anchor('index.php/item/list/','メニュー',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/website/item/list/','メニュー',array('class'=>'link'))?>
 </div>

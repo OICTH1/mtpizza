@@ -1,4 +1,4 @@
-<?php echo Asset::css('contents/whereismypizza.css') ?>
+<?php echo Asset::css('website/contents/whereismypizza.css') ?>
 
 <div class="heading">
     ご注文内容
@@ -81,4 +81,4 @@
     <a class="buttonlink">戻る</a>
 </div>
 <?php echo Asset::js("https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCQellvVcqIZwpn0xtU0Vrc5SBLWnTt8") ?>
-<?php echo Asset::js('contents/whereismypizza.js') ?>
+<?php echo Asset::js('website/contents/whereismypizza.js') ?>

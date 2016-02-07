@@ -1,18 +1,18 @@
 <?php
 
-class Controller_Auth Extends Controller_Page
+class Controller_Website_Auth Extends Controller_Website_Page
 {
 
     public function action_index($selectflag = false)
     {
       $data['selectflag'] = $selectflag;
-      $this->template->content = View::forge('content/auth',$data);
+      $this->template->content = View::forge('website/content/auth',$data);
     }
 
     public function action_err($selectflag = false){
       $data['selectflag'] = $selectflag;
       $data['err'] = true;
-      $this->template->content = View::forge('content/auth',$data);
+      $this->template->content = View::forge('website/content/auth',$data);
     }
 
 
@@ -32,19 +32,19 @@ class Controller_Auth Extends Controller_Page
               \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
           }
           if ($selectflag == 'true') {
-              return Response::redirect('index.php/order/delivery');
+              return Response::redirect('index.php/website/order/delivery');
           } else {
-              return Response::redirect('index.php/top');
+              return Response::redirect('index.php/website/top');
           }
       } else {
-            return Response::redirect('index.php/auth/err');
+            return Response::redirect('index.php/website/auth/err');
       }
     }
 
     public function action_logout(){
         \Session::delete(self::SESSION_KEY_USER_ID);
         \Session::delete(self::SESSION_KEY_CART);
-        return Response::redirect('index.php/top');
+        return Response::redirect('index.php/website/top');
     }
 }
 

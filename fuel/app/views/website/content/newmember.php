@@ -1,5 +1,5 @@
-<?php echo Asset::css('content/newmember.css') ?>
-<?php echo Asset::css('content/validationEngine.jquery.css') ?>
+<?php echo Asset::css('website/content/newmember.css') ?>
+<?php echo Asset::css('website/content/validationEngine.jquery.css') ?>
 
 <div class="heading">
     新規会員登録
@@ -20,7 +20,7 @@
     </div>
     <div class="formright">
         <?php $flag = isset($editing) ?>
-        <?php echo Form::open(array('action'=>'index.php/newmember/check','method'=>'post','id'=>'formin')) ?>
+        <?php echo Form::open(array('action'=>'index.php/website/newmember/check','method'=>'post','id'=>'formin')) ?>
             <div class="formrightin"><input type="text" name="mail" size="60" class="validate[required,custom[email]]" value=<?php if($flag){echo $editing['mail'];} ?>></div>
 
             <div class="formrightin"><input type="password" name="password1" id="password1" size="50" class="validate[required],minSize[8]">　<span class="description">8文字以上</span></div>
@@ -54,10 +54,10 @@
 </div>
 <?php echo Form::close() ?>
 <div class="back button">
-    <?php echo Html::anchor('index.php/top','戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('index.php/website/top','戻る',array('class'=>'link'))?>
 </div>
-<?php echo Asset::js('content/jquery/jquery.js') ?>
-<?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
-<?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
-<?php echo Asset::js('content/jquery/ajaxzip3.js')?>
-<?php echo Asset::js('content/newmember.js') ?>
+<?php echo Asset::js('website/content/jquery/jquery.js') ?>
+<?php echo Asset::js('website/content/jquery/jquery.validationEngine.js') ?>
+<?php echo Asset::js('website/content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('website/content/jquery/ajaxzip3.js')?>
+<?php echo Asset::js('website/content/newmember.js') ?>

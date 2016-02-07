@@ -1,12 +1,12 @@
 <?php
 
-class Controller_Item Extends Controller_Page
+class Controller_Website_Item Extends Controller_Website_Page
 {
     public function action_list($category = 'pizza')
     {
         $category_table =  array('pizza'=>'ピザ','side'=>'サイド','drink'=>'ドリンク');
         if(!array_key_exists($category,$category_table)){
-            return Response::redirect('index.php/welcome/404');
+            return Response::redirect('index.php/website/welcome/404');
         }
         $items = Model_Item::find('all',array(
             'where' => array(
@@ -17,7 +17,7 @@ class Controller_Item Extends Controller_Page
         foreach ($items as $item) {
             array_push($item_list,array(
                 'item_id' => $item->id,
-                'img_path' => 'items/'.$item->img['path'],
+                'img_path' => 'website/items/'.$item->img['path'],
                 'item_name' => $item->name,
                 'prices' => array(
                     'unit_price' => $item->unit_price,
@@ -30,7 +30,7 @@ class Controller_Item Extends Controller_Page
         }
         $data['item_list'] = $item_list;
         $data['category'] = $category_table[$category];
-        $this->template->content = View::forge('content/itemlist',$data);
+        $this->template->content = View::forge('website/content/itemlist',$data);
     }
 
     public function action_detail($item_id,$order_id = null)
@@ -42,7 +42,7 @@ class Controller_Item Extends Controller_Page
         $category_table =  array('ピザ'=>'pizza','サイド' => 'side','ドリンク' =>'drink');
         $data['detail'] = array(
             'item_id' => $item->id,
-            'img_path' => 'items/'.$item->img['path'],
+            'img_path' => 'website/items/'.$item->img['path'],
             'item_name' => $item->name,
             'category' => $category_table[$item->category],
             'prices' => array(
@@ -54,7 +54,7 @@ class Controller_Item Extends Controller_Page
             'explanatory' => $item->explanatory
         );
         $data['order_id'] = $order_id;
-        $this->template->content = View::forge('content/itemdetail',$data);
+        $this->template->content = View::forge('website/content/itemdetail',$data);
     }
 }
 

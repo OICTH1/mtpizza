@@ -1,4 +1,4 @@
-<?php echo Asset::css('content/ordercheck.css');?>
+<?php echo Asset::css('website/content/ordercheck.css');?>
     <div class="content">
         <div class="heading">
             ご注文内容
@@ -41,8 +41,8 @@
         </div>
     </div>
     <div class="confirm button">
-        <?php echo Html::anchor('index.php/order/commit','確定',array('class'=>'buttonlink'))?>
+        <?php echo Html::anchor('index.php/website/order/commit','確定',array('class'=>'buttonlink'))?>
     </div>
     <div class="back button">
-        <?php echo Html::anchor('index.php/order/delivery','戻る',array('class'=>'buttonlink'))?>
+        <?php echo Html::anchor('index.php/website/order/delivery','戻る',array('class'=>'buttonlink'))?>
     </div>

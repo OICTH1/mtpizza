@@ -1,5 +1,5 @@
-<?php echo Asset::css('content/deliveryselect.css') ?>
-<?php echo Asset::css('content/validationEngine.jquery.css') ?>
+<?php echo Asset::css('website/content/deliveryselect.css') ?>
+<?php echo Asset::css('website/content/validationEngine.jquery.css') ?>
 
 
 
@@ -10,7 +10,7 @@
 <!--==========配達先選択=====================-->
 <div class="select-address">
 
-    <?php echo Form::open(array('action' => 'index.php/order/enter', 'id' => 'other-form'))?>
+    <?php echo Form::open(array('action' => 'index.php/website/order/enter', 'id' => 'other-form'))?>
     <table>
         <!--==========登録している住所=====================-->
       <tr>
@@ -86,8 +86,8 @@
 <div class="back button">
     <?php echo Html::anchor('index.php/cart','戻る',array('class'=>'link'))?>
 </div>
-<?php echo Asset::js('content/jquery/jquery.js') ?>
-<?php echo Asset::js('content/jquery/jquery.validationEngine.js') ?>
-<?php echo Asset::js('content/jquery/jquery.validationEngine-ja.js') ?>
-<?php echo Asset::js('content/jquery/ajaxzip3.js')?>
-<?php echo Asset::js('content/deliveryselect.js')?>
+<?php echo Asset::js('website/content/jquery/jquery.js') ?>
+<?php echo Asset::js('website/content/jquery/jquery.validationEngine.js') ?>
+<?php echo Asset::js('website/content/jquery/jquery.validationEngine-ja.js') ?>
+<?php echo Asset::js('website/content/jquery/ajaxzip3.js')?>
+<?php echo Asset::js('website/content/deliveryselect.js')?>

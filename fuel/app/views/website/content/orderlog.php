@@ -1,4 +1,4 @@
- 	  <?php echo Asset::css('content/orderlog.css');?>
+ 	  <?php echo Asset::css('website/content/orderlog.css');?>
 
             <div class="heading">
                 注文履歴一覧
@@ -48,7 +48,7 @@
                                         <span><?php echo $total_money?></span>円
                                     </div>
                                     <div class="button">
-                                        <?php echo Html::anchor('index.php/cart/historyin/' . $order['id'],'カートに入れる')?>
+                                        <?php echo Html::anchor('index.php/website/cart/historyin/' . $order['id'],'カートに入れる')?>
                                     </div>
                                 </div>
                     <?php endforeach; ?>
@@ -58,8 +58,8 @@
               </li>
             </div>
             <div class="back button">
-                <?php echo Html::anchor('index.php/member','戻る',array('class'=>'link'))?>
+                <?php echo Html::anchor('index.php/website/member','戻る',array('class'=>'link'))?>
             </div>
 
-<?php echo Asset::js('content/jquery/jquery.js');?>
-<?php echo Asset::js('content/orderlog.js')?>
+<?php echo Asset::js('website/content/jquery/jquery.js');?>
+<?php echo Asset::js('website/content/orderlog.js')?>

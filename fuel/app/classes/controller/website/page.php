@@ -1,8 +1,8 @@
 <?php
 
-class Controller_Page Extends Controller_Template
+class Controller_Website_Page Extends Controller_Template
 {
-    public $template = "header";
+    public $template = "website/header";
 
     const SESSION_KEY_USER_ID = 'user_id';
     const SESSION_KEY_CART = 'cart';

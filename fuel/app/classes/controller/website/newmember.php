@@ -1,10 +1,10 @@
 <?php
 
-class Controller_Newmember Extends Controller_Page
+class Controller_Website_Newmember Extends Controller_Website_Page
 {
     public function action_index(){
         \Session::delete(self::SESSION_KEY_POST);
-        $this->template->content = View::forge('content/newmember');
+        $this->template->content = View::forge('website/content/newmember');
     }
 
     public function action_check(){
@@ -12,7 +12,7 @@ class Controller_Newmember Extends Controller_Page
             \Session::set(self::SESSION_KEY_POST,$_POST);
         }
         $data['newmember'] = $_POST;
-        $this->template->content = View::forge('content/newmembercheck',$data);
+        $this->template->content = View::forge('website/content/newmembercheck',$data);
     }
 
     public function action_commit(){
@@ -41,9 +41,9 @@ class Controller_Newmember Extends Controller_Page
            if(empty(\Session::get(self::SESSION_KEY_CART))){
                \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
            }
-           return Response::redirect('index.php/message/newmember');
+           return Response::redirect('index.php/website/message/newmember');
        } else {
-             return Response::redirect('index.php/auth/err');
+             return Response::redirect('index.php/website/auth/err');
        }
     }
 
@@ -51,13 +51,13 @@ class Controller_Newmember Extends Controller_Page
         if(!empty(\Session::get(self::SESSION_KEY_POST))){
             $data['editing'] = \Session::get(self::SESSION_KEY_POST);
         } else {
-            return Response::redirect('index.php/newmember');
+            return Response::redirect('index.php/website/newmember');
         }
-        $this->template->content = View::forge('content/newmember',$data);
+        $this->template->content = View::forge('website/content/newmember',$data);
     }
 
     public function action_backtop(){
         \Session::delete(self::SESSION_KEY_POST);
-        return Response::redirect('index.php/top');
+        return Response::redirect('index.php/website/top');
     }
 }

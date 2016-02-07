@@ -1,13 +1,13 @@
-<?php echo Asset::css('content/itemlist.css');?>
+<?php echo Asset::css('website/content/itemlist.css');?>
 <div class="contents">
 	<div class="heading">
 		<?php echo $category ?>
 	</div>
 	<div class="category">
 		<ul>
-			<li class="category-pizza"><?php echo Html::anchor('index.php/item/list/pizza','ピザ',array('class'=>'link'))?></li>
-			<li class="category-drink"><?php echo Html::anchor('index.php/item/list/drink','ドリンク',array('class'=>'link'))?></li>
-			<li class="category-side"><?php echo Html::anchor('index.php/item/list/side','サイド',array('class'=>'link'))?></li>
+			<li class="category-pizza"><?php echo Html::anchor('index.php/website/item/list/pizza','ピザ',array('class'=>'link'))?></li>
+			<li class="category-drink"><?php echo Html::anchor('index.php/website/item/list/drink','ドリンク',array('class'=>'link'))?></li>
+			<li class="category-side"><?php echo Html::anchor('index.php/website/item/list/side','サイド',array('class'=>'link'))?></li>
 		</ul>
 	</div>
 	<div class="list">
@@ -16,7 +16,7 @@
 	            <div class="listitem">
 	                <div class="img imglink">
 	                  <?php echo Asset::img($item['img_path']);?>
-					  <?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'',array())?>
+					  <?php echo Html::anchor('index.php/website/item/detail/' . $item['item_id'],'',array())?>
 	                </div>
 	                <div class="pizzaname"><?php echo $item['item_name']?></div>
 					<div class="pricelist">
@@ -29,7 +29,7 @@
 		            <div class="zei">(税込)</div>
 	                <!--<div class="description"><?php echo $item['explanatory']?></div>-->
 	                <div class="syousai">
-						<?php echo Html::anchor('index.php/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
+						<?php echo Html::anchor('index.php/website/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
 	                </div>
 	            </div>
 			<?php if($i % 3 == 2){echo '</div>';}?>
@@ -45,5 +45,5 @@
 		<div style="clear:both"></div>
     </div>
 	<div class=" button">
-		<?php echo Html::anchor('index.php/top','TOPページに戻る',array('class'=>'link'))?>
+		<?php echo Html::anchor('index.php/website/top','TOPページに戻る',array('class'=>'link'))?>
 	</div>

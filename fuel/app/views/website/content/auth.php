@@ -1,11 +1,11 @@
-<?php echo Asset::css('content/auth.css')?>
+<?php echo Asset::css('website/content/auth.css')?>
 <div class="contents">
     <div class="heading">
         ログインページ
     </div>
     <div class="loginform">
         <div class="form">
-           <?php echo form::open('index.php/auth/login/' . $selectflag)?>
+           <?php echo form::open('index.php/website/auth/login/' . $selectflag)?>
            <div class="formin">
             <div class="formtitle">ご登録のメールアドレス</div><div class="forminput"><input type="text" name="mail" size="40" id="form-mail">
           </div>
@@ -28,9 +28,9 @@
       <?php echo form::close()?>
     </div>
     <div class="newmember button">
-        <?php echo Html::anchor('index.php/newmember','新規会員登録はこちら',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/website/newmember','新規会員登録はこちら',array('class'=>'link'))?>
     </div>
     <div class="return-top button">
-        <?php echo Html::anchor('index.php/top','TOPへ戻る',array('class'=>'link'))?>
+        <?php echo Html::anchor('index.php/website/top','TOPへ戻る',array('class'=>'link'))?>
     </div>
 </div>

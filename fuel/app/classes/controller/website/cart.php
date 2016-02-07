@@ -1,15 +1,15 @@
 <?php
 
-class Controller_Cart Extends Controller_Page
+class Controller_Website_Cart Extends Controller_Website_Page
 {
 
     public function action_index(){
         $data;
         $data['cart'] = \Session::get(self::SESSION_KEY_CART);
         if(count($data['cart']['orders']) == 0){
-            return Response::redirect('index.php/message/cartempty');
+            return Response::redirect('index.php/website/message/cartempty');
         }
-        $this->template->content = View::forge('content/itemcart',$data);
+        $this->template->content = View::forge('website/content/itemcart',$data);
     }
 
     public function action_add(){
@@ -38,7 +38,7 @@ class Controller_Cart Extends Controller_Page
         }
         $cart['total_money'] =  $total_money;
         \Session::set(self::SESSION_KEY_CART,$cart);
-        return Response::redirect('index.php/cart');
+        return Response::redirect('index.php/website/cart');
     }
 
     public function action_delete($id){
@@ -50,7 +50,7 @@ class Controller_Cart Extends Controller_Page
         }
         $cart['total_money'] =  $total_money;
         \Session::set(self::SESSION_KEY_CART,$cart);
-        return Response::redirect('index.php/cart');
+        return Response::redirect('index.php/website/cart');
     }
 
     public function action_edit($id){
@@ -76,7 +76,7 @@ class Controller_Cart Extends Controller_Page
         }
         $cart['total_money'] =  $total_money;
         \Session::set(self::SESSION_KEY_CART,$cart);
-        return Response::redirect('index.php/cart');
+        return Response::redirect('index.php/website/cart');
     }
 
     public function action_historyin($order_id){
@@ -117,13 +117,13 @@ class Controller_Cart Extends Controller_Page
         }
         $cart['total_money'] =  $total_money;
         \Session::set(self::SESSION_KEY_CART,$cart);
-        return Response::redirect('index.php/cart');
+        return Response::redirect('index.php/website/cart');
 
     }
 
     public function action_test(){
         Session::delete('cart');
-        return Response::redirect('index.php/item/list');
+        return Response::redirect('index.php/website/item/list');
     }
 
 
