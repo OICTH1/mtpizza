@@ -1,0 +1,194 @@
+/***** コンテンツ全体 *****/
+
+/***** コンテンツ全体 *****/
+/*******メニュー*********/
+.menu{
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.menuheading{
+      margin-bottom: 40px;
+}
+
+.menuin{
+	padding-top: 30px;
+	width: 100%;
+	box-sizing: border-box;
+    background-color: #FFFACD;
+
+	border-radius: 0 0 30px 30px ;
+}
+
+.detail{
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+
+.menuname{
+    font-size: 34px;
+    width: 100%;
+	margin-bottom: 30px;
+}
+
+.menuleft{
+	float: left;
+	width: 40%;
+	height: 85%;
+	box-sizing: border-box;
+}
+.menuleft > img {
+	height: 250px;
+	width: 350px;
+
+}
+.menuright{
+	float: left;
+	width: 60%;
+	height: 85%;
+	box-sizing: border-box;
+	line-height: 1.5;
+    font-size: 24px;
+}
+
+.pricelist{
+
+}
+
+.price{
+  display: ;
+}
+.price-sml{
+  display: ;
+}
+
+.zei{
+  text-align: left;
+  font-size: 20px;
+}
+
+.description{
+		font-size: 22px;
+    padding: 5px 0;
+}
+/*******メニュー*********/
+/*************サイズ****************/
+
+.size{
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.sizeheading{
+    font-size: 34px;
+    padding: 10px;
+	margin-bottom: 40px;
+    width: 100%;
+    text-align : center;
+    box-sizing: border-box;
+}
+
+.sizein{
+	display: flex;
+    font-size: 26px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.s,.m,.l{
+	flex: 1;
+	text-align : center;
+	box-sizing: border-box;
+}
+.m{
+
+}
+.s input,.m input,.l input{
+  height: 30px;
+  width: 30px;
+}
+
+/*************サイズ****************/
+/*********セレクト&数量選択カート移動***********/
+
+.select{
+	display: flex;
+	width:100%;
+	box-sizing: border-box;
+	font-size: 34px;
+	padding: 20px 0;
+	border-radius: 0 0 30px 30px ;
+}
+.select > div{
+	flex: 1;
+	text-align: center;
+}
+.selectleft{
+	font-size:34px;
+	padding: 17px 0;
+	box-sizing: border-box;
+}
+.selectleft > select{
+
+	font-size: 34px;
+}
+
+.selectcenter{
+	padding: 17px 0;
+	box-sizing: border-box;
+}
+
+.selectcenter > div{
+	float: left;
+}
+#money{
+	width: 3.5em;
+	text-align: right;
+}
+
+.selectright{
+	/*background-image: url("../img/cart.png");*/
+	background-size: contain;
+	box-sizing: border-box;
+}
+
+.selectright>input{
+    font-size: 34px;
+    border: solid 1px black;
+}
+/*********セレクト&数量選択カート移動***********/
+
+
+/****一覧へ戻る******/
+
+
+
+/****一覧へ戻る******/
+
+
+/***********Color**********/
+.menuin{
+	background-color: #F8EDD1;
+}
+
+.menuname{
+	padding-bottom: 10px;
+	border-bottom: solid 5px #98B21D;
+}
+
+.sizeheading{
+	background-color: #FEC049;
+}
+
+.select{
+	background-color: #CD1D1F;
+}
+
+.selectright > input{
+	background-color: #2F291B;
+	border: none;
+	border-radius: 30px;
+	color: #F8EDD1;
+	padding: 20px;
+	font-size: 24px;
+}

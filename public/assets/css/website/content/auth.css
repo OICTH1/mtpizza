@@ -1,0 +1,104 @@
+
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+
+/**********ログインのフォーム**********/
+.loginform{
+    box-sizing: border-box;
+    padding: 30px 30px ;
+    background-color: #FFFACD;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px ;
+}
+
+#form-password,#form-mail{
+  font-size: 24px;
+}
+#form-mail{
+  width: 15em;
+}
+
+#form-password{
+  width: 7em;
+}
+
+
+.form{
+    box-sizing: border-box;
+    width: 100%;
+
+}
+.form form{
+
+}
+
+.formin{
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.formin:first-child {
+    margin-bottom: 20px;
+}
+
+.formin:last-child {
+    margin-bottom: 30px;
+}
+
+.formtitle{
+  width: 35%;
+  float: left;
+  box-sizing: border-box;
+  padding: 4px 0;
+}
+
+.forminput{
+  width: 60%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.login-btn{
+
+}
+
+.login-btn > label{
+  display: block;
+  color: #F8EDD1;
+  padding: 10px;
+  font-size: 24px;
+  width: 5em;
+  margin: 0 auto;
+  text-align : center;
+  background-color: #2F291B;
+  border-radius: 40px;
+}
+
+
+
+/**********ログインのフォーム***********/
+/***********下のボタン***********/
+.newmember{
+    margin-bottom: 30px;
+}
+
+.return-top{
+
+}
+/***********下のボタン***********/
+
+/******err-message**********************/
+
+#err-message{
+  color: #f00;
+  margin-bottom: 20px;
+}
+
+/*Color*/
+.loginform{
+    background-color: #F8EDD1;
+}

@@ -1,0 +1,124 @@
+/***** コンテンツ全体 *****/
+
+/***** コンテンツ全体 *****/
+.content{
+    margin-bottom: 30px;
+}
+/*******見出しの所****/
+.caption{
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/******ご注文内容部分*******/
+.cart{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+
+.cartin{
+    font-size: 24px;
+    width: 100%;
+    height: 35px;
+    padding:  5px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.name{
+    float: left;
+    width: 60%;
+    height: 100%;
+
+}
+
+.num{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.money{
+    float: left;
+    width: 30%;
+    height: 100%;
+    text-align: right
+}
+
+.cartin:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/*合計金額*/
+.summoney{
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 28px;
+    text-align: right;
+    box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
+}
+
+.sum{
+    width: 20%;
+    float: right;
+    text-align: right;
+    box-sizing: border-box;
+
+}
+
+/******ご注文内容部分*******/
+/**********配達先住所部分***********/
+.delivery{
+
+    font-size: 24px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
+}
+
+.postal{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.address{
+    width: 100%;
+}
+
+/**********配達先住所部分***********/
+/*********確定戻る***********/
+.confirm{
+    margin-bottom: 30px;
+}
+/*********確定戻る***********/
+
+
+/*Color*/
+.content{
+}
+
+.cart,.delivery{
+    background-color: #F8EDD1;
+    border-radius: 0 0 30px 30px;
+}
+
+.caption{
+    background-color: #FEC049;
+}
+
+.summoney{
+    background-color: #CD1D1F;
+}

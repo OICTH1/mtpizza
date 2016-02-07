@@ -1,0 +1,183 @@
+/***** コンテンツ全体 *****/
+/***********商品リスト部分*************/
+
+.listheading{
+
+}
+
+.list{
+    width: 100%;
+    box-sizing: border-box;
+	margin-bottom: 30px;
+    padding: 40px 0;
+    border-radius: 0 0 30px 30px ;
+}
+
+.listrow{
+    display: flex;
+}
+
+.listitem{
+    flex: 1;
+    background-color: #FFFFF0;
+    width: 250px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.noneitem{
+    background: none;
+    border: solid 1px;
+    border-color: rgba(0,0,0,0);
+}
+
+.img{
+    height: 180px;
+    padding: 10px;
+}
+.img > img{
+
+    height: 100%;
+    width: 100%;
+}
+.pizzaname{
+    font-size: 23px;
+	padding: 0px 5px;
+    margin-top: 5px;
+}
+.zei{
+
+    font-size: 15px;
+    height: 12px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.pricelist{
+    font-size: 18px;
+    padding: 5px;
+}
+
+.price{
+	display: block;
+}
+
+.price-sml{
+	display: block;
+}
+
+.description{
+    padding: 6px;
+    min-height: 55px;
+
+}
+.syousai{
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+a.buttonlink{
+    padding-top: 7px;
+    display: block;
+    padding: 8px 0px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*---------------category*****************/
+.category {
+	margin: 0 auto;
+}
+
+.category > ul{
+	display: flex;
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+
+.category li{
+	flex: auto;
+	text-align: center;
+	font-size: 24px;
+	box-sizing: border-box;
+}
+
+.category li > a{
+    padding: 15px;
+}
+
+
+/*.category li:first-child{
+	border-radius: 8px 0px 0px 8px;
+}
+
+.category li:last-child{
+	border-radius: 0px 8px 8px 0px;
+}*/
+
+/***********商品リスト部分*************/
+/**********トップページに戻る***********/
+
+.toppage{
+
+}
+
+/**********トップページに戻る***********/
+
+
+/*****Color*******/
+
+.category > ul{
+
+}
+
+.category li > a{
+	/*color: #800000;*/
+}
+
+.category li:hover{
+    background-color: #2F291B;
+}
+
+.category li > a:hover{
+    color: #F8EDD1;
+}
+
+.category-pizza,.category-side{
+	background-color: #CD1D1F;
+
+}
+
+.category-pizza  a,.category-side  a{
+    color: #F8EDD1;
+}
+
+.category-drink{
+    background-color: #FEC049;
+}
+
+.category-drink{
+    color:  #2F291B;
+}
+
+.list{
+	background-color: #F8EDD1;
+}
+
+.listitem{
+    background-color: #F8EDD1;
+    border: solid 4px #98B21D;
+    box-sizing: border-box;
+}
+
+.syousai{
+    background-color: #FEC049;
+    box-sizing: border-box;;
+}
+
+.syousai:hover{
+    /*background-color: #CD1D1F;*/
+    box-sizing: border-box;;
+}

@@ -1,0 +1,119 @@
+
+/***** コンテンツ全体 *****/
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+
+/******ご注文内容部分*******/
+
+/*住所洗濯フォーム*/
+.select-address{
+  font-size: 24px;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius:  0 0 30px 30px;
+}
+
+.select-address table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+/*ラジオボタン用ラベル*/
+.select-address input{
+    font-size: 24px;
+}
+
+input[name='postalcode']{
+    width: 5em;
+}
+
+input[name='address1']{
+    width: 25em;
+}
+
+.select-address td{
+
+}
+.select-address td:nth-child(1){
+  width: 40px;
+  text-align: center;
+}
+
+label > .labe{
+  height: 100%;
+  width: 100%;
+}
+
+/*選択詳細*/
+.select-address td:nth-child(2){
+  padding: 10px;
+}
+
+/*選択詳細　タイトル*/
+.select-address h3{
+  margin: 0;
+  font-size: 24px;
+}
+/*登録住所　詳細*/
+#registered-address{
+  padding-left: 1em;
+  margin-top: 20px;
+}
+
+/***********住所指定欄************/
+.other-form{
+  margin-top: 20px;
+  padding: 30px;
+  display: none;
+}
+
+
+.other-form > div:not(:last-child){
+  margin-bottom: 2.5em;
+}
+.form-label{
+
+  min-width: 50%;
+  margin-bottom: 1em;
+}
+
+.form-input{
+
+  margin-left: 2em;
+}
+
+.form-describe{
+  margin-left: 1em;
+  font-size: 14px;
+  text-decoration: underline;
+  clear: both;
+}
+
+/*********確定戻る***********/
+.confirmation{
+    margin-bottom: 30px;
+}
+
+/*********確定戻る***********/
+
+/*Color*/
+.select-address{
+    background-color: #F8EDD1;
+
+    box-sizing: border-box;
+}
+
+
+.select-address tr > td:first-child{
+    background-color: #FEC049;
+}
+.select-address td:last-child{
+    background-color: rgba(152,178,29,0.6);
+    box-sizing: border-box;
+}
+.other-form {
+    border-top: solid 4px #F8EDD1;
+}

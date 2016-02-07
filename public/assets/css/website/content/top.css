@@ -1,0 +1,141 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.content{
+  width: 100%;
+}
+
+.content-top{
+  margin-bottom: 50px;
+}
+
+/*-----main-nav---------------------------*/
+.main-nav{
+  font-size:24px;
+  min-width: 270px;
+  max-width: 290px;
+  height: 394px;
+  float: left;
+
+}
+
+.main-nav ul{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+
+.main-nav li{
+  background-color: #FFFACD	;
+  width: 100%;
+  /*border: solid 10px #FFD700;*/
+  padding: 40px;
+  border-radius: 30px;
+  color: #A52A2A;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align:  text-top;
+}
+
+.main-nav li:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.main-nav li > a{
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.main-nav li > div:not(.clear){
+    float: left;
+}
+
+.main-nav li > div > i{
+    display: inline-block;
+    font-size: 50px;
+}
+
+.main-nav li  > div:nth-child(3){
+    display: inline-block;
+    padding: 13px 0;
+    margin-left: 10px;
+}
+
+/*-----top-banner-------------------------*/
+.top-banner{
+  float: right;
+  width: 700px;
+  height: 394px;
+}
+
+.top-banner img{
+  width: 100%;
+  height: 100%;
+  /*border: solid 10px  #228B22;*/
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/*----recommendation------------------*/
+.recommendation-label{
+  font-size: 32px;
+  padding: 20px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.recommendation{
+  border-radius: 0 0 20px 20px;
+  /*border: solid 10px #FF4F50;*/
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  color: #A52A2A;
+}
+
+.recommendation-list{
+  display: flex;
+  width: 100%;
+}
+
+.re-list-item{
+    flex: 1;
+  width: 320px;
+}
+
+
+
+.re-list-item-img{
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.re-list-item-img > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  /*border: solid 4px #A52A2A;*/
+}
+
+.re-list-item-name{
+  text-align: center;
+  font-size: 24px;
+}
+
+
+/*********Color************/
+.main-nav li,.recommendation{
+    background-color: #F8EDD1;
+}
+
+.recommendation-label{
+    background-color: #98B21D;
+}

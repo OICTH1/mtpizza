@@ -1,0 +1,85 @@
+
+
+/***** コンテンツ全体 *****/
+
+/*******見出しの所****/
+
+/**********配達先住所部分***********/
+
+.memberinfo{
+    margin-bottom: 30px;
+    border-radius: 0 0 30px 30px;
+}
+
+.form{
+    font-size: 24px;
+    padding: 30px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.formitem,.formitem > div{
+    display: inline-block;
+}
+
+
+.formitem:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.itemleft{
+    float: left;
+    width: 7em;
+    margin-right: 80px;;
+}
+
+
+.first_name,.last_name,.first_name_kana,.last_name_kana{
+    width: 20%;
+    height: 100%;
+    text-align: left;
+}
+.last_name,.last_name_kana{
+    padding-right: 40px;
+}
+
+.description{
+    text-align: left;
+    font-size: 23.5px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.memberinfo-bottom{
+    background-color: #CD1D1F;
+    text-align: right;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+.memberinfo-bottom .button{
+    font-size: 24px;
+    width: 8em;
+    display: inline-block;
+}
+
+.memberinfo-bottom .button > a{
+}
+/**********配達先住所部分***********/
+/**********配達先住所部分***********/
+/*********確定戻る***********/
+.modify{
+
+}
+
+.top{
+
+}
+
+
+/*********確定戻る***********/
+
+/*****Color******/
+.memberinfo{
+    background-color: #F8EDD1;
+}

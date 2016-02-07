@@ -1,0 +1,172 @@
+
+
+
+  *{
+  }
+
+ html,body{
+      padding: 0;
+      margin: 0;
+  }
+
+
+  .main{
+    width: 1040px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(248,237,209, 0.4);
+    padding: 30px 0 40px 0;
+    box-sizing: border-box;
+
+  }
+
+header{
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.header-top{
+    width: 100%;
+    height: 30px;
+}
+
+.navigator{
+    float: right;
+}
+  .navi-list{
+    margin: 0;
+    list-style: none;
+  }
+  .navi-list > li{
+    float: left;
+    padding: 4px 15px;
+  }
+
+  .navi-list > li:not(:last-child){
+    border-right: dashed 1px  #A52A2A;
+  }
+  .navi-list a {
+    color: #A52A2A;
+    text-decoration: none;
+  }
+
+  .header-bottom{
+    background-color: ;
+    height: 100px;
+  }
+
+  .info-bar{
+    float: right;
+    height: 100%;
+  }
+  .info-item{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100%;
+    float: left;
+    border-left: solid 1px white;
+  }
+
+  .info-item > a{
+      padding: 60px 10px 0px 10px;
+      box-sizing: border-box;
+  }
+
+  .info-item > a:hover{
+      background-color: #FFFFF0;
+  }
+
+  .info-logout{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 40px 10px 0px 10px;
+    float: left;
+    border-left: solid 1px;
+  }
+
+.info-logout > div:first-child{
+    margin-bottom: 4px;
+    color: #2F291B;
+}
+  .member-ber{
+    border: solid 1px #666;
+    height: auto;
+  }
+
+.member-name,.logout-btn{
+  float: left;
+}
+
+.member-name{
+  color: #000;
+  background-color: #FFF	;
+  padding: 7px;
+}
+
+.logout-btn{
+  font-size: 14px;
+  padding: 4px 2px;
+  border: solid 4px #2F291B;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.logout-btn > a{
+  color: #000;
+}
+
+  #logo{
+      height: 100%;
+      background-image: url('../../img/logo.png');
+  }
+
+  .logo {
+    float: left;
+    width: 160px;
+    height: 90px;
+    border-radius: 40px;
+
+    margin: 5px
+  }
+  .inner{
+    margin: 0 auto;
+    height: inherit;
+    width: 1000px;
+  }
+
+
+/****Color********/
+body{
+    background-color: #FEC049/**/;
+}
+
+.header-bottom{
+    background-color: #CD1D1F;
+}
+
+*{
+    color: #2F291B;
+}
+
+.logo{
+    background-color: #F8EDD1;
+}
+
+.info-item ,.info-logout{
+    border-color: #F8EDD1;
+}
+
+.info-item a{
+    color: #FEC049;
+}
+
+.info-item a:hover{
+    background-color: #F8EDD1;
+    color:#CD1D1F;
+}
+
+.navi-list > li:hover{
+    background-color: #F8EDD1;
+}
