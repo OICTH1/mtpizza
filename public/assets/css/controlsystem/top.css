@@ -1,0 +1,41 @@
+
+body
+{
+  width: 1000px;
+  height: 900px;
+  margin: auto;
+  padding: 5px;
+}
+
+input{
+    font-size: 40px;
+}
+
+.content
+{
+  width: 990px;
+  height: 890px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.frame
+{
+  width: 445px;
+  height: 256px;
+  padding-top: 40px;
+  margin: auto;
+  float: left;
+  text-align: center;
+}
+p
+{
+  width: 300px;
+  font-size: 40px;
+  padding: 75px 0;
+  margin: auto;
+  border: 1px solid;
+}
+
+a {
+text-decoration: none;
+}

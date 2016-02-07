@@ -1,0 +1,142 @@
+body
+{
+  width: 990px;
+  height: 890px;
+  margin: auto;
+  padding: 5px;
+}
+.header
+{
+  width: 980px;
+  height: 90px;
+  padding: 5px;
+}
+.title
+{
+  font-size: 35px;
+  float: left;
+  margin-left: 20px;
+}
+.back
+{
+  float: right;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.back p
+{
+  padding: 5px;
+  border: 1px solid;
+}
+.content
+{
+  width: 980px;
+  height: 880px;
+  padding: 5px;
+}
+.content_top
+{
+  width: 970px;
+  height: 270px;
+  padding: 5px;
+}
+.search_condition
+{
+  width: 958px;
+  height: 260px;
+  padding: 5px;
+  border: 1px solid;
+}
+.search_condition p
+{
+  margin: 10px;
+  font-size: 25px;
+}
+.search_condition div
+{
+  float: left;
+  padding: 5px;
+  margin: 7px;
+}
+.heading
+{
+  width: 230px;
+  height: 30px;
+  padding: 5px;
+  font-size: 30px;
+}
+.period
+{
+  clear: both;
+  font-size: 20px;
+}
+.period input[type="textbox"]
+{
+  width: 45px;
+  font-size: 20px;
+}
+.category
+{
+  clear: both;
+  font-size: 20px;
+}
+.item_name
+{
+  font-size: 20px;
+}
+.item_name input[type="textbox"]
+{
+  font-size: 20px;
+}
+.search
+{
+  float: right;
+}
+.submit
+{
+  font-size: 30px;
+  padding: 5px;
+  float: right;
+  margin:50px 50px 0 0;
+}
+.content_bottom
+{
+  width: 970px;
+  height: 480px;
+  padding: 5px;
+}
+.result
+{
+  width: 960px;
+  height: 470px;
+  padding: 5px;
+  margin: auto;
+}
+.result table
+{
+  width: 960px;
+  height: 468px;
+  margin: auto;
+  border: 1px solid;
+}
+thead.table_head,tbody.table_scroll{
+	display: block;
+}
+tbody.table_scroll {
+	overflow-y: auto;
+	height: 410px;
+}
+.result td,th{
+  border-collapse: collapse;
+	text-align: center;
+	width: 400px;
+  font-size: 30px;
+}
+#day
+{
+  width: 200px;
+}
+#size,#num,#total
+{
+  width: 119px;
+}

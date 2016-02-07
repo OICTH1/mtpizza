@@ -1,0 +1,113 @@
+body
+{
+	width: 1000px;
+	height: 900px;
+	margin: 0 auto;
+	font-size: 24px;
+}
+
+.content_left,.content_right{
+	border: solid 1px;
+	padding: 30px;
+	height: 620px;
+	box-sizing: border-box;
+}
+
+.content_left{
+	float: left;
+}
+
+.content_left_top,.content_left_buttom,.content_right_top,.content_right_center{
+	/*border: solid 1px;*/
+}
+
+.content_left_top{
+	margin-bottom: 20px;
+}
+
+.content_right{
+	float: right;
+}
+
+.item_add p{
+
+}
+
+
+tbody{
+	overflow-y: scroll;
+}
+
+.view_table_scroll{
+	display: block;
+	width: 240px;
+	height:400px;
+	overflow-y: scroll;
+}
+
+.view_table_scroll  tr td{
+	width: 100%;
+
+}
+
+.item{
+	cursor: pointer;
+}
+
+.item-selected{
+	background-color: red;
+}
+
+.item_add{
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.item_add p{
+	margin: 12px 0;
+}
+
+.item_add span{
+	position: absolute;
+	left: 6em;
+}
+
+.order_table tbody,.order_table thead{
+	display: block;
+}
+
+.order_table_scroll{
+	max-height:202px;
+	overflow-y: scroll;
+}
+
+
+
+.order_table td:not(:nth-child(2)){
+	text-align: center;
+}
+
+.order_table th:nth-child(1),.order_table td:nth-child(1){
+	width: 1em;
+}
+
+.order_table th:nth-child(2),.order_table td:nth-child(2){
+	width: 10em;
+}
+
+.order_table th:nth-child(3),.order_table td:nth-child(3){
+	width: 3em;
+}
+
+.order_table th:nth-child(4),.order_table td:nth-child(4){
+	width: 4em;
+}
+
+.order_table th:nth-child(5),.order_table td:nth-child(5){
+	font-size: 24px;
+	width: 64px;
+}
+
+.order_table select , .cart-delete-btn{
+	font-size: 24px;
+}

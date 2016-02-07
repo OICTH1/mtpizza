@@ -1,0 +1,113 @@
+body
+{
+  width: 1000px;
+  height: 900px;
+  margin: auto;
+  padding: 5px
+}
+
+input{
+    font-size: 30px;
+}
+.header
+{
+  width: 990px;
+  height: 90px;
+  padding: 5px;
+}
+.title
+{
+  font-size: 35px;
+  float: left;
+  margin-left: 20px;
+}
+.back
+{
+  float: right;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.back p
+{
+  padding: 5px;
+  border: 1px solid;
+}
+.content
+{
+  width: 990px;
+  height: 790px;
+  padding: 5px;
+  margin: auto;
+}
+.content_top
+{
+  width: 980px;
+  padding: 5px;
+  margin: auto;
+  float: left;
+  border: 1px solid;
+}
+.search
+{
+  width: 968px;
+  padding: 5px;
+  margin: auto;
+}
+.search p
+{
+  font-size: 20px;
+}
+.search td,th
+{
+  font-size: 30px;
+  padding: 5px;
+}
+.submit
+{
+  font-size: 30px;
+  float: right;
+  margin: -20px 20px 0 0;
+}
+.content_bottom
+{
+  width: 980px;
+  height: 480px;
+  padding: 5px;
+  margin: auto;
+  float: left;
+}
+.result
+{
+  width: 968px;
+  height: 470px;
+  padding: 5px;
+  margin: auto;
+}
+.result table
+{
+  width: 968px;
+  height: 468px;
+  margin: auto;
+  border: 1px solid;
+}
+thead.table_head,tbody.table_scroll{
+	display: block;
+}
+tbody.table_scroll {
+	overflow-y: auto;
+	height: 410px;
+}
+.result td,th{
+  border-collapse: collapse;
+	text-align: center;
+	width: 245px;
+  font-size: 30px;
+}
+button {
+  font-size: 80%;
+}
+#historylink
+{
+  font-size: 30px;
+  text-align: center;
+}

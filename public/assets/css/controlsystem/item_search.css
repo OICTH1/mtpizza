@@ -1,0 +1,124 @@
+
+body,div{
+  box-sizing: border-box;
+}
+
+body
+{
+  width: 1000px;
+  height: 990px;
+  margin: auto;
+  padding: 10px 5px;
+}
+.header
+{
+  width: 990px;
+  height: 90px;
+  padding: 5px;
+}
+.title
+{
+  font-size: 35px;
+  float: left;
+  margin-left: 20px;
+}
+.back
+{
+  float: right;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.back p
+{
+  padding: 5px;
+  border: 1px solid;
+}
+.content
+{
+<<<<<<< HEAD
+  width: 990px;
+  height: 980px;
+  margin: auto;
+  padding: 5px;
+=======
+  width: auto;
+  height: 890px;
+  padding: 0 5px;
+>>>>>>> 6f3f8095bd4c0eb4772948b72eecb5814ecd7134
+}
+.content_top
+{
+  width: auto;
+  height: 300px;
+  margin: auto;
+  padding: 5px;
+}
+.search
+{
+  width: 970px;
+  height: 290px;
+  margin: auto;
+  border: 1px solid;
+}
+.search p
+{
+  font-size: 30px;
+  float: left;
+  clear: both;
+  margin: 10px 0 20px 20px;
+}
+.search input[type="textbox"]
+{
+  font-size: 30px;
+  float: left;
+  margin: 20px 0 0 40px;
+}
+.search input[type="button"]
+{
+  font-size: 30px;
+}
+#search
+{
+  float: right;
+  margin: 80px 30px 0 0
+}
+.content_bottom
+{
+  width: 980px;
+  height: 590px;
+  margin: auto;
+  padding: 5px;
+}
+.result
+{
+  width: 970px;
+  height: 580px;
+  margin: auto;
+  border: 1px solid;
+}
+thead.table_head,tbody.table_scroll{
+  display: block;
+  width: 970px;
+}
+tbody.table_scroll {
+	overflow-y: auto;
+	height: 550px;
+}
+
+
+td,th{
+  border-collapse: collapse;
+	text-align: center;
+	width: 200px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+#item_name
+{
+  width: 400px;
+}
+.content_bottom input[type="button"]
+{
+  font-size: 20px;
+  padding-right: 0;
+}

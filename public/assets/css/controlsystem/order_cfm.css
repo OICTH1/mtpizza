@@ -1,0 +1,140 @@
+body
+{
+  width: 1000px;
+  margin: auto;
+}
+.header
+{
+  width: 990px;
+  padding: 5px;
+}
+.title
+{
+  width: 650px;
+  padding: 10px;
+  font-size: 35px;
+  float: left;
+}
+.return
+{
+  width: 300px;
+  padding: 10px;
+  float: left;
+}
+.top
+{
+  float: left;
+  font-size: 30px;
+}
+.top p
+{
+  padding: 5px;
+  border: 1px solid;
+}
+.back
+{
+  float: right;
+  font-size: 30px;
+}
+.back p
+{
+  padding: 5px;
+  border: 1px solid;
+}
+.content
+{
+  width: 990px;
+  margin: auto;
+}
+.content_top
+{
+  width: 990px;
+  margin: 0;
+  margin-bottom: 20px;
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.content table
+{
+    width: 100%;
+
+}
+
+#label
+{
+  margin: 5px 5px;
+  font-size: 30px;
+  clear: both;
+}
+
+.content_top b
+{
+  float: left;
+  margin: 5px 5px;
+  font-size: 30px;
+}
+.content_top input[type="textbox"]
+{
+  float: left;
+  margin: 2px 0 0 2px;
+  font-size: 30px;
+}
+.content_center
+{
+  width: 990px;
+  margin: 0 auto;
+}
+
+.total{
+    padding: 10px;
+    border: solid 1px;
+    font-size: 30px;
+}
+.total > div:not(:last-child){
+    float: right;
+    padding-right: 20px;
+}
+#item_name
+{
+    width: 300px;
+}
+thead.table_head,tbody.table_scroll{
+	display: block;
+}
+tbody.table_scroll {
+	overflow-y: auto;
+	height: 300px;
+}
+.content_center td,th{
+  border-collapse: collapse;
+  width: 200px;
+  font-size: 30px;
+}
+
+.content_center td:not(:first-child),th{
+    text-align: center;
+}
+.content_bottom
+{
+    width: 990px;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+}
+.buttons > div{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons > div > a{
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    border: solid 1px;
+    background-color: lightgrey;
+    padding: 10px;
+    cursor: pointer;
+}
