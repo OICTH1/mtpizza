@@ -12,7 +12,7 @@ class Controller_Controlsystem_Order_Cfm extends Controller
         if(!empty($orders['cart'])){
             foreach ($orders['cart'] as $order) {
                 $item = Model_Item::find($order['item_id']);
-                $price = $data['price'] * $order['num'];
+                $price = $order['unit_price'] * $order['num'];
                 $data['total'] += $price;
                 $data['orders'][] = array(
                     'item_name' => $order['item_name'],
@@ -99,7 +99,7 @@ class Controller_Controlsystem_Order_Cfm extends Controller
             $earning->save();
 
         }
-        return View::forge('order/commit');
+        return View::forge('controlsystem/order/commit');
     }
 }
 
