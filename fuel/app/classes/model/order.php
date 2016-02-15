@@ -13,7 +13,7 @@ class Model_Order extends \Orm\Model
 	);
 
 
-	protected static $_table_name = 'tbl_order';
+	protected static $_table_name = 'tbl_orders';
 
 	protected static $_has_one = array(
 		'member' => array(
