@@ -1,0 +1,18 @@
+[submodule "public/fuel/core"]
+	path = public/fuel/core
+	url = git://github.com/fuel/core.git
+[submodule "public/fuel/packages/oil"]
+	path = public/fuel/packages/oil
+	url = git://github.com/fuel/oil.git
+[submodule "public/fuel/packages/auth"]
+	path = public/fuel/packages/auth
+	url = git://github.com/fuel/auth.git
+[submodule "public/fuel/packages/parser"]
+	path = public/fuel/packages/parser
+	url = git://github.com/fuel/parser.git
+[submodule "public/fuel/packages/orm"]
+	path = public/fuel/packages/orm
+	url = git://github.com/fuel/orm.git
+[submodule "public/fuel/packages/email"]
+	path = public/fuel/packages/email
+	url = git://github.com/fuel/email.git
