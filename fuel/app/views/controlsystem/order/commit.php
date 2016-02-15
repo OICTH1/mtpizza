@@ -7,7 +7,7 @@
     <body>
         <div>
             <h1>注文が完了いたしました</h1>
-             <div><?php echo Html::anchor('index.php/top','トップに戻る') ?></div>
+             <div><?php echo Html::anchor('index.php/controlsystem/top','トップに戻る') ?></div>
         </div>
     </body>
 </html>
