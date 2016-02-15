@@ -28,9 +28,9 @@
             <div class="header-top">
                 <div class="navigator">
                   <ul class="navi-list">
-                    <li><?php echo Html::anchor('index.php/website/top','TOP',array('class'=>'link'))?></li>
-                    <li><?php echo Html::anchor('index.php/website/item/list','メニュー',array('class'=>'link'))?></li>
-                    <li><?php echo Html::anchor('index.php/website/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
+                    <li><?php echo Html::anchor('mtpizza/top','TOP',array('class'=>'link'))?></li>
+                    <li><?php echo Html::anchor('mtpizza/item/list','メニュー',array('class'=>'link'))?></li>
+                    <li><?php echo Html::anchor('mtpizza/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
                   </ul>
                 </div>
                 <div class="clear">
@@ -40,7 +40,7 @@
 
             <div class="header-bottom">
                 <div class="logo">
-                  <?php echo Html::anchor('index.php/website/top','',array('class'=>'link','id'=>'logo'))?>
+                  <?php echo Html::anchor('mtpizza','',array('class'=>'link','id'=>'logo'))?>
                 </div>
                 <div >
 
@@ -48,10 +48,10 @@
                 <div class="info-bar">
                 <?php if(!$member):?>
                     <div class="info-login info-item">
-                      <?php echo Html::anchor('index.php/website/auth','ログイン',array('class'=>'link'))?>
+                      <?php echo Html::anchor('mtpizza/auth','ログイン',array('class'=>'link'))?>
                     </div>
                     <div class="info-signup info-item">
-                        <?php echo Html::anchor('index.php/website/newmember','新規登録',array('class'=>'link'))?>
+                        <?php echo Html::anchor('mtpizza/newmember','新規登録',array('class'=>'link'))?>
                     </div>
                   <?php else:?>
                   <div class="info-logout">
@@ -63,16 +63,16 @@
                         <?php echo $member['name'] . '様' ?>
                       </div>
                       <div class="logout-btn">
-                        <?php echo Html::anchor('index.php/website/auth/logout','ログアウト',array('class'=>'link'))?>
+                        <?php echo Html::anchor('mtpizza/auth/logout','ログアウト',array('class'=>'link'))?>
                       </div>
                       <div style="clear:both"></div>
                     </div>
                   </div>
                   <div class="info-memberinfo info-item">
-                      <?php echo Html::anchor('index.php/website/member','会員情報',array('class'=>'link'))?>
+                      <?php echo Html::anchor('mtpizza/member','会員情報',array('class'=>'link'))?>
                   </div>
                   <div class="info-cart info-item">
-                      <?php echo Html::anchor('index.php/website/cart','カート',array('class'=>'link'))?>
+                      <?php echo Html::anchor('mtpizza/cart','カート',array('class'=>'link'))?>
                   </div>
                  <?php endif;?>
                 </div>
