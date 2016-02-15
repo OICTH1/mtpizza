@@ -1,38 +1,75 @@
 body
 {
   width: 1000px;
-  height: 990px;
-  margin: auto;
+  height: 900px;
+  margin: 0px;
+}
+.header{
+  width:1000px;
+}
+.title{
+    font-size:50px;
+    width:490px;
+    padding-left:10px;
+    text-align:left;
+    float:left;
+}
+
+.back{
+    font-size:40px;
+    width:500px;
+    padding-top:5px;
+  text-align:right;
+  float:left;
+}
+.back a{
+  border:solid 1px;
 }
 .content
 {
-  width: auto;
-  height: 980px;
-  margin: auto;
-  padding: 5px;
+  width:1000px;
+  height: 900px;
+  margin-left: 20px;
 }
 
-.regi_content
-{
+.content-left{
+  width:480px;
+  height:850px;
+  padding-left:20px;
+  float:left;
+  /*background-color:red;*/
+}
+
+.content-right{
+  width:500px;
+  height:850px;
+  margin:0;
+  float:left;
+  /*float:right;*/
+  /*background-color:blue;*/
+}
+/*.regi_content{
   width: 980px;
   height: 970px;
   margin: auto;
-}
+}*/
 .regi_content p
 {
   float: left;
   clear: both;
   font-size: 30px;
-  margin: 15px 0 30px 30px;
+  margin: 10px 5px 5px 10px;
 }
+
 .regi_content input[type="textbox"]
 {
   font-size: 30px;
+  margin:10px;
   width: 200px;
 }
 .regi_content input[type="checkbox"]
 {
-  margin-left: 47px;
+  margin-left: 20px;
   width: 20px;
   height: 20px;
 }
@@ -50,26 +87,22 @@ body
 }
 #price
 {
-  margin-left: 129px;
+  margin-left: 100px;
 }
 #price,#s_price,#m_price,#l_price
 {
-  width: 100px;
+  margin-left:20px;
+  width:200px;
 }
 #explanation
 {
   font-size: 20px;
-  width: 500px;
+  width: 380px;
   height: 200px;
-  margin: -30px 0 0 190px;
+  margin: 0 0 0 20px;
 }
 #registration
 {
-  margin-left: 800px;
-  font-size: 30px;
-}
-#appload
-{
-  margin-left: 27px;
+  margin-left: 350px;
   font-size: 30px;
 }
