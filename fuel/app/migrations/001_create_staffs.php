@@ -2,7 +2,7 @@
 
 namespace Fuel\Migrations;
 
-class Create_staffs
+class Create_tbl_staffs
 {
 	public function up()
 	{
