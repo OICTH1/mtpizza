@@ -24,7 +24,7 @@ class Model_Order extends \Orm\Model
 			'cascade_delete' => false,
 		),
 		'deliveryman' => array(
-			'model_to' => 'Model_Deliveryman',
+			'model_to' => 'Model_Staff',
 			'key_from' => 'deliveryman_id',
 			'key_to' => 'id',
 			'cascade_save' => true,
