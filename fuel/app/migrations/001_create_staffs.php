@@ -10,8 +10,8 @@ class Create_staffs
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'name' => array('constraint' => 50, 'type' => 'varchar'),
 			'staffno' => array('constraint' => 11, 'type' => 'int'),
-			'long' => array('constraint' => 10, 'type' => 'double'),
-			'lat' => array('constraint' => 10, 'type' => 'double'),
+			'long' => array('constraint' => 10, 'type' => 'float'),
+			'lat' => array('constraint' => 10, 'type' => 'float'),
 			'created_at' => array('constraint' => 11, 'type' => 'int', 'null' => true),
 			'updated_at' => array('constraint' => 11, 'type' => 'int', 'null' => true),
 
