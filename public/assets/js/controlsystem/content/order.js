@@ -2,7 +2,7 @@ var baseurl = '/mtpizza/public/index.php/controlsystem/';
 var url = 'api/order/cart';
 
 function poster(n,c){
-  $.post('/mtpizza/public/index.php/controlsystem/api/item/rowList.json',{vowel:n,category:c},listUpdata);
+  $.post('/controlsystem/api/item/rowList.json',{vowel:n,category:c},listUpdata);
 }
 var name = 'a';
 var category = 'pizza';
@@ -25,7 +25,6 @@ $('.indexlist_form input[name=index]').change(
 $(".indexlist_item").click(function(){
   name = $(this).attr("value");
   poster(name,category);
-
 });
 
 $('.item_title_form input[name=c]').change(
@@ -73,7 +72,7 @@ function listUpdata(data){
 
 
 function cartpos(id,size,num){
-  $.post('/mtpizza/public/index.php/controlsystem/api/order/add.json',{id:id,size:size,num:num},cartUpdata);
+  $.post('/controlsystem/api/order/add.json',{id:id,size:size,num:num},cartUpdata);
 }
 
 

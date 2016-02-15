@@ -1,6 +1,6 @@
 
 $('input[type=file]').after('<span></span>');
- 
+
 // アップロードするファイルを選択
 $('input[type=file]').change(function() {
   var file = $(this).prop('files')[0];
@@ -12,7 +12,6 @@ $('input[type=file]').change(function() {
     $('span').html('');
     return;
   }
-
   // 画像表示
   var reader = new FileReader();
   reader.onload = function() {
@@ -23,7 +22,18 @@ $('input[type=file]').change(function() {
   }
 
   reader.readAsDataURL(file);
-}); 
+});
+
+$('input[name="category"]:radio').change(function(){
+  if($('input[name="category"]:checked').val() == "pizza"){
+    $('.one').attr('readonly', true);
+    $('.size').attr('readonly', false);
+  } else {
+    $('.one').attr('readonly', false);
+    $('.size').attr('readonly',true);
+  }
+});
+
 
 /*function connecttext( textid, ischecked ) {
    if( ischecked == true ) {
@@ -40,10 +50,9 @@ $('.size').attr('disabled','true');
 
 $('input[name=category]').change(function(){
   var val = $('input[name=category]:checked').val();
-  console.log(val);
+
   if(val == 'pizza'){
     $('.size').attr('disabled','false');
     $('.one').attr('disabled','true');
   }
 });*/
-
