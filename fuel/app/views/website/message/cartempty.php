@@ -2,5 +2,5 @@
     メニューから商品をお選びください。
 </p>
 <div class="button">
-    <?php echo Html::anchor('index.php/website/item/list/','メニュー',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza/item/list/','メニュー',array('class'=>'link'))?>
 </div>
