@@ -1,12 +1,12 @@
 <?php
 
-class Controller_Website_Item Extends Controller_Website_Page
+class Controller_Mtpizza_Item Extends Controller_Website_Page
 {
     public function action_list($category = 'pizza')
     {
         $category_table =  array('pizza'=>'ピザ','side'=>'サイド','drink'=>'ドリンク');
         if(!array_key_exists($category,$category_table)){
-            return Response::redirect('index.php/website/welcome/404');
+            return Response::redirect('/welcome/404');
         }
         $items = Model_Item::find('all',array(
             'where' => array(

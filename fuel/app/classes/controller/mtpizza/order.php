@@ -1,14 +1,14 @@
 <?php
 
-class Controller_Website_Order Extends Controller_Website_Page
+class Controller_Mtpizza_Order Extends Controller_Website_Page
 {
     public function before(){
             parent::before();
           if(empty(\Session::get(self::SESSION_KEY_USER_ID))){
-            return Response::redirect('index.php/website/auth/index/true');
+            return Response::redirect('mtpizza/auth/index/true');
           }
           if(empty(\Session::get(self::SESSION_KEY_CART))){
-            return Response::redirect('index.php/website/message/cartempty');
+            return Response::redirect('mtpizza/message/cartempty');
           }
     }
 
@@ -39,7 +39,7 @@ class Controller_Website_Order Extends Controller_Website_Page
                 break;
         }
         \Session::set(self::SESSION_KEY_ADDRESS,$address);
-        return Response::redirect('index.php/website/order/check');
+        return Response::redirect('mtpizza/order/check');
     }
 
     public function action_check(){
@@ -108,7 +108,7 @@ class Controller_Website_Order Extends Controller_Website_Page
 
         }
         \Session::delete(self::SESSION_KEY_CART);
-        return Response::redirect('index.php/website/message/commit');
+        return Response::redirect('mtpizza/message/commit');
     }
 
 }

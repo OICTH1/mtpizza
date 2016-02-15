@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Website_Auth Extends Controller_Website_Page
+class Controller_Mtpizza_Auth Extends Controller_Website_Page
 {
 
     public function action_index($selectflag = false)
@@ -32,19 +32,18 @@ class Controller_Website_Auth Extends Controller_Website_Page
               \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
           }
           if ($selectflag == 'true') {
-              return Response::redirect('index.php/website/order/delivery');
+              return Response::redirect('mtpizza/order/delivery');
           } else {
-              return Response::redirect('index.php/website/top');
+              return Response::redirect('mtpizza');
           }
       } else {
-            return Response::redirect('index.php/website/auth/err');
+            return Response::redirect('mtpizza/auth/err');
       }
     }
 
     public function action_logout(){
         \Session::delete(self::SESSION_KEY_USER_ID);
-        \Session::delete(self::SESSION_KEY_CART);
-        return Response::redirect('index.php/website/top');
+        \Session::delete(self::SESSmtpizza');
     }
 }
 

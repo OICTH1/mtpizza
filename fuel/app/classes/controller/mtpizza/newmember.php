@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Website_Newmember Extends Controller_Website_Page
+class Controller_Mtpizza_Newmember Extends Controller_Website_Page
 {
     public function action_index(){
         \Session::delete(self::SESSION_KEY_POST);
@@ -41,9 +41,9 @@ class Controller_Website_Newmember Extends Controller_Website_Page
            if(empty(\Session::get(self::SESSION_KEY_CART))){
                \Session::set(self::SESSION_KEY_CART,array('orders'=>array(),'total_money'=>0));
            }
-           return Response::redirect('index.php/website/message/newmember');
+           return Response::redirect('mtpizza/message/newmember');
        } else {
-             return Response::redirect('index.php/website/auth/err');
+             return Response::redirect('mtpizza/auth/err');
        }
     }
 
@@ -51,13 +51,13 @@ class Controller_Website_Newmember Extends Controller_Website_Page
         if(!empty(\Session::get(self::SESSION_KEY_POST))){
             $data['editing'] = \Session::get(self::SESSION_KEY_POST);
         } else {
-            return Response::redirect('index.php/website/newmember');
+            return Response::redirect('mtpizza/newmember');
         }
         $this->template->content = View::forge('website/content/newmember',$data);
     }
 
     public function action_backtop(){
         \Session::delete(self::SESSION_KEY_POST);
-        return Response::redirect('index.php/website/top');
+        return Response::redirect('mtpizza');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Website_Page Extends Controller_Template
+class Controller_Mtpizza_Page Extends Controller_Template
 {
     public $template = "website/header";
 

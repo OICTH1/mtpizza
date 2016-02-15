@@ -1,11 +1,11 @@
 <?php
 
-class Controller_Website_Member Extends Controller_Website_Page
+class Controller_Mtpizza_Member Extends Controller_Website_Page
 {
     public function before(){
             parent::before();
           if(empty(\Session::get(self::SESSION_KEY_USER_ID))){
-            return Response::redirect('index.php/website/auth');
+            return Response::redirect('mtpizza/auth');
           }
     }
     public function action_index(){
@@ -41,7 +41,7 @@ class Controller_Website_Member Extends Controller_Website_Page
         $user->save();
 
         //$this->template->content = var_dump($_POST);
-        return Response::redirect('index.php/website/member');
+        return Response::redirect('mtpizza/member');
     }
 
     public function action_history()

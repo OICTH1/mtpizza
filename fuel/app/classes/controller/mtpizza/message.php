@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Website_Message extends Controller_Website_Page
+class Controller_Mtpizza_Message extends Controller_Website_Page
 {
 	public $data;
 
