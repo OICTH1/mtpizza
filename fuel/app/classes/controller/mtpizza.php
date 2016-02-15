@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Website_Mtpizza Extends Controller
+class Controller_Mtpizza Extends Controller_Mtpizza_Page
 {
     public function action_index()
     {

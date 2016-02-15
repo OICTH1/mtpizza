@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Mtpizza_Order Extends Controller_Website_Page
+class Controller_Mtpizza_Order Extends Controller_Mtpizza_Page
 {
     public function before(){
             parent::before();

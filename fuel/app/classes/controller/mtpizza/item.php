@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Mtpizza_Item Extends Controller_Website_Page
+class Controller_Mtpizza_Item Extends Controller_Mtpizza_Page
 {
     public function action_list($category = 'pizza')
     {

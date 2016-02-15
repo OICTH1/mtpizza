@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Mtpizza_Newmember Extends Controller_Website_Page
+class Controller_Mtpizza_Newmember Extends Controller_Mtpizza_Page
 {
     public function action_index(){
         \Session::delete(self::SESSION_KEY_POST);
