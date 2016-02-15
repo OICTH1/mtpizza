@@ -28,7 +28,7 @@ class Controller_Controlsystem_Item_registration extends Controller
 
     // 初期設定
     $config = array(
-      'path' => DOCROOT.DS.'assets/img',
+      'path' => DOCROOT.DS.'assets/img/items',
       'randomize' => true,
       'ext_whitelist' => array('img', 'jpg', 'jpeg', 'gif', 'png'),
     );
@@ -40,10 +40,11 @@ class Controller_Controlsystem_Item_registration extends Controller
     if (Upload::is_valid())
     {
       // 設定を元に保存
-      Upload::save();
+      //Upload::save();
       $uploadfile = Upload::get_files(0);
       // 情報をデータベースに保存する場合
-      $item_img->path = $uploadfile["name"];
+      Upload::save(0);
+      $item_img->path = $uploadfile['name'];
     }
     foreach (Upload::get_errors() as $file)
        {
@@ -53,7 +54,7 @@ class Controller_Controlsystem_Item_registration extends Controller
     $item->img_id = $item_img->id;
     $item->save();
 
-
+    //return var_dump($uploadfile['name']);
     return View::forge('controlsystem/top');
   }
 }
