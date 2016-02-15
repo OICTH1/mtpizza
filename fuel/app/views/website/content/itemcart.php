@@ -20,10 +20,10 @@
                                         金額￥<span><?php echo $order['money']?></span>
                                     </div>
                                     <div class="change button">
-                                        <?php echo Html::anchor('index.php/website/item/detail/'.$order['item_id'] . '/' . $key,'変更',array('class'=>'link'))?>
+                                        <?php echo Html::anchor('mtpizza/item/detail/'.$order['item_id'] . '/' . $key,'変更',array('class'=>'link'))?>
                                     </div>
                                     <div class="delete button">
-                                        <?php echo Html::anchor('index.php/website/cart/delete/' . $key,'削除',array('class'=>'link'))?>
+                                        <?php echo Html::anchor('mtpizza/cart/delete/' . $key,'削除',array('class'=>'link'))?>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="button selectdelivery">
-            <?php echo Html::anchor('index.php/website/order/delivery','配達先選択へ進む',array('class'=>'link'))?>
+            <?php echo Html::anchor('mtpizza/order/delivery','配達先選択へ進む',array('class'=>'link'))?>
         </div>
         <div class="button">
           <?php echo Html::anchor('index.php/website/item/list','お買い物を続ける',array('class'=>'link'))?>

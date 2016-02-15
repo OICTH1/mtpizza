@@ -31,8 +31,8 @@
     <div class="clear"></div>
 </div>
 <div class="confirm button">
-    <?php echo Html::anchor('index.php/website/newmember/commit','登録',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza/newmember/commit','登録',array('class'=>'link'))?>
 </div>
 <div class="modify button">
-    <?php echo Html::anchor('index.php/website/newmember/edit','再編集',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza/newmember/edit','再編集',array('class'=>'link'))?>
 </div>

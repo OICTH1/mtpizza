@@ -23,9 +23,9 @@
         </div>
         <div class="clear"></div>
         <?php if(isset($order_id)):?>
-            <?php echo Form::open(array('action' => 'index.php/website/cart/edit/' . $order_id, 'method' => 'post'))?>
+            <?php echo Form::open(array('action' => 'mtpizza/cart/edit/' . $order_id, 'method' => 'post'))?>
         <?php else :?>
-            <?php echo Form::open(array('action' => 'index.php/website/cart/add', 'method' => 'post'))?>
+            <?php echo Form::open(array('action' => 'mtpizza/cart/add', 'method' => 'post'))?>
         <?php endif;?>
         <?php echo Form::hidden('item_id',$detail['item_id'])?>
     </div>
@@ -67,6 +67,6 @@
   </div>
 </div>
 <div class="button">
-  <?php echo Html::anchor('index.php/website/item/list/'.$detail['category'],'メニューへ戻る',array('class'=>'link'))?>
+  <?php echo Html::anchor('mtpizza/item/list/'.$detail['category'],'メニューへ戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('website/content/itemdetail.js')?>

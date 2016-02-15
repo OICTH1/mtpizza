@@ -41,8 +41,8 @@
         </div>
     </div>
     <div class="confirm button">
-        <?php echo Html::anchor('index.php/website/order/commit','確定',array('class'=>'buttonlink'))?>
+        <?php echo Html::anchor('mtpizza/order/commit','確定',array('class'=>'buttonlink'))?>
     </div>
     <div class="back button">
-        <?php echo Html::anchor('index.php/website/order/delivery','戻る',array('class'=>'buttonlink'))?>
+        <?php echo Html::anchor('mtpizza/order/delivery','戻る',array('class'=>'buttonlink'))?>
     </div>

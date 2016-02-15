@@ -5,7 +5,7 @@
     </div>
     <div class="loginform">
         <div class="form">
-           <?php echo form::open('index.php/website/auth/login/' . $selectflag)?>
+           <?php echo form::open('mtpizza/auth/login/' . $selectflag)?>
            <div class="formin">
             <div class="formtitle">ご登録のメールアドレス</div><div class="forminput"><input type="text" name="mail" size="40" id="form-mail">
           </div>
@@ -28,9 +28,9 @@
       <?php echo form::close()?>
     </div>
     <div class="newmember button">
-        <?php echo Html::anchor('index.php/website/newmember','新規会員登録はこちら',array('class'=>'link'))?>
+        <?php echo Html::anchor('mtpizza/newmember','新規会員登録はこちら',array('class'=>'link'))?>
     </div>
     <div class="return-top button">
-        <?php echo Html::anchor('index.php/website/top','TOPへ戻る',array('class'=>'link'))?>
+        <?php echo Html::anchor('mtpizza','TOPへ戻る',array('class'=>'link'))?>
     </div>
 </div>

@@ -58,7 +58,7 @@
               </li>
             </div>
             <div class="back button">
-                <?php echo Html::anchor('index.php/website/member','戻る',array('class'=>'link'))?>
+                <?php echo Html::anchor('mtpizza/member','戻る',array('class'=>'link'))?>
             </div>
 
 <?php echo Asset::js('website/content/jquery/jquery.js');?>

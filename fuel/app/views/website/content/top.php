@@ -4,15 +4,15 @@
       <div class="main-nav">
         <ul>
           <li class="imglink">
-              <?php echo Html::anchor('index.php/website/cart','')?>
+              <?php echo Html::anchor('mtpizza/cart','')?>
               <div><i class="fa fa-shopping-cart"></i></div><div>カート</div><div class="clear"></div>
           </li>
           <li class="imglink">
-              <?php echo Html::anchor('index.php/website/item/list','',array(''))?>
+              <?php echo Html::anchor('mtpizza/item/list','',array(''))?>
               <div><i class="fa fa-book"></i></div><div>メニュー</div><div class="clear"></div>
           </li>
           <li class="imglink">
-              <?php echo Html::anchor('index.php/website/message/pizzadoko','',array(''))?>
+              <?php echo Html::anchor('mtpizza/message/pizzadoko','',array(''))?>
               <div><i class="fa fa-search"></i></div><div>ピザどこ？</div><div class="clear"></div>
           </li>
         </ul>
@@ -27,7 +27,7 @@
         <div class="recommendation-list">
           <div class="re-list-item">
               <div class="re-list-item-img imglink">
-                <?php echo Html::anchor('index.php/website/item/detail/1','',array('class'=>''))?>
+                <?php echo Html::anchor('mtpizza/item/detail/1','',array('class'=>''))?>
                 <?php echo Asset::img('website/margherita.jpg');?>
               </div>
               <div class="re-list-item-name">マルゲリータ</div>
@@ -35,7 +35,7 @@
           </div>
           <div class="re-list-item">
               <div class="re-list-item-img imglink">
-                <?php echo Html::anchor('index.php/website/item/detail/11','',array('class'=>''))?>
+                <?php echo Html::anchor('mtpizza/item/detail/11','',array('class'=>''))?>
                 <?php echo Asset::img('website/rukora.jpg');?>
               </div>
               <div class="re-list-item-name">ルコラ</div>
@@ -43,7 +43,7 @@
           </div>
           <div class="re-list-item">
               <div class="re-list-item-img imglink">
-                <?php echo Html::anchor('index.php/website/item/detail/8','',array('class'=>''))?>
+                <?php echo Html::anchor('mtpizza/item/detail/8','',array('class'=>''))?>
                 <?php echo Asset::img('website/capricciosa.jpg');?>
               </div>
               <div class="re-list-item-name">  カプリチョーザ</div>

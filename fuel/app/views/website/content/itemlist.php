@@ -16,7 +16,7 @@
 	            <div class="listitem">
 	                <div class="img imglink">
 	                  <?php echo Asset::img($item['img_path']);?>
-					  <?php echo Html::anchor('index.php/website/item/detail/' . $item['item_id'],'',array())?>
+					  <?php echo Html::anchor('imtpizza/item/detail/' . $item['item_id'],'',array())?>
 	                </div>
 	                <div class="pizzaname"><?php echo $item['item_name']?></div>
 					<div class="pricelist">
@@ -29,7 +29,7 @@
 		            <div class="zei">(税込)</div>
 	                <!--<div class="description"><?php echo $item['explanatory']?></div>-->
 	                <div class="syousai">
-						<?php echo Html::anchor('index.php/website/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
+						<?php echo Html::anchor('mtpizza/item/detail/' . $item['item_id'],'詳細を見る',array('class'=>'buttonlink'))?>
 	                </div>
 	            </div>
 			<?php if($i % 3 == 2){echo '</div>';}?>
@@ -45,5 +45,5 @@
 		<div style="clear:both"></div>
     </div>
 	<div class=" button">
-		<?php echo Html::anchor('index.php/website/top','TOPページに戻る',array('class'=>'link'))?>
+		<?php echo Html::anchor('mtpizza','TOPページに戻る',array('class'=>'link'))?>
 	</div>

@@ -10,7 +10,7 @@
 <!--==========配達先選択=====================-->
 <div class="select-address">
 
-    <?php echo Form::open(array('action' => 'index.php/website/order/enter', 'id' => 'other-form'))?>
+    <?php echo Form::open(array('action' => 'mtpizza/order/enter', 'id' => 'other-form'))?>
     <table>
         <!--==========登録している住所=====================-->
       <tr>
@@ -84,7 +84,7 @@
 </div>
 <?php echo Form::close()?>
 <div class="back button">
-    <?php echo Html::anchor('index.php/cart','戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza/cart','戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('website/content/jquery/jquery.js') ?>
 <?php echo Asset::js('website/content/jquery/jquery.validationEngine.js') ?>

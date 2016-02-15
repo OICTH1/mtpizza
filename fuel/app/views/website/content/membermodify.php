@@ -20,7 +20,7 @@
         <div class="formleftin">確認のためもう一度</div>
     </div>
     <div class="formright">
-        <?php echo Form::open(array('action'=>'index.php/website/member/editcommit','method'=>'post','id'=>'formin')) ?>
+        <?php echo Form::open(array('action'=>'mtpizza/member/editcommit','method'=>'post','id'=>'formin')) ?>
           <div class="formrightin"><span class="description">姓　名</span><input type="text" name="name" class="validate[maxSize[20]"></div>
           <div class="formrightin"><span class="description">セイメイ</span><input type="text" name="kana" class="validate[maxSize[25]"></div>
           <div class="formrightin">西暦　<span class="years"><?php $birthday = explode('-',$user->birthday);echo $birthday[0]?></span>　年　<span class="month"><?php echo $birthday[1]?></span>　月　<span class="days"><?php echo $birthday[2]?></span>　日　　<span class="description">（変更できません）</span></div>
@@ -44,7 +44,7 @@
 </div>
     </form>
 <div class="back button">
-    <?php echo Html::anchor('index.php/website/member','編集せず戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza/member','編集せず戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('website/content/jquery/jquery.js') ?>
 <?php echo Asset::js('website/content/jquery/jquery.validationEngine.js') ?>

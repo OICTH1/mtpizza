@@ -20,7 +20,7 @@
     </div>
     <div class="formright">
         <?php $flag = isset($editing) ?>
-        <?php echo Form::open(array('action'=>'index.php/website/newmember/check','method'=>'post','id'=>'formin')) ?>
+        <?php echo Form::open(array('action'=>'mtpizza/newmember/check','method'=>'post','id'=>'formin')) ?>
             <div class="formrightin"><input type="text" name="mail" size="60" class="validate[required,custom[email]]" value=<?php if($flag){echo $editing['mail'];} ?>></div>
 
             <div class="formrightin"><input type="password" name="password1" id="password1" size="50" class="validate[required],minSize[8]">　<span class="description">8文字以上</span></div>
@@ -54,7 +54,7 @@
 </div>
 <?php echo Form::close() ?>
 <div class="back button">
-    <?php echo Html::anchor('index.php/website/top','戻る',array('class'=>'link'))?>
+    <?php echo Html::anchor('mtpizza','戻る',array('class'=>'link'))?>
 </div>
 <?php echo Asset::js('website/content/jquery/jquery.js') ?>
 <?php echo Asset::js('website/content/jquery/jquery.validationEngine.js') ?>
