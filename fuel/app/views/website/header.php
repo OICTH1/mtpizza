@@ -33,6 +33,9 @@
                     <li><?php echo Html::anchor('index.php/website/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
                   </ul>
                 </div>
+                <div class="clear">
+
+                </div>
             </div>
 
             <div class="header-bottom">
