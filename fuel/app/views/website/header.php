@@ -28,7 +28,7 @@
             <div class="header-top">
                 <div class="navigator">
                   <ul class="navi-list">
-                    <li><?php echo Html::anchor('mtpizza/top','TOP',array('class'=>'link'))?></li>
+                    <li><?php echo Html::anchor('mtpizza','TOP',array('class'=>'link'))?></li>
                     <li><?php echo Html::anchor('mtpizza/item/list','メニュー',array('class'=>'link'))?></li>
                     <li><?php echo Html::anchor('mtpizza/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
                   </ul>

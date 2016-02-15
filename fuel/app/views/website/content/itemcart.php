@@ -42,6 +42,6 @@
             <?php echo Html::anchor('mtpizza/order/delivery','配達先選択へ進む',array('class'=>'link'))?>
         </div>
         <div class="button">
-          <?php echo Html::anchor('index.php/website/item/list','お買い物を続ける',array('class'=>'link'))?>
+          <?php echo Html::anchor('mtpizza/item/list','お買い物を続ける',array('class'=>'link'))?>
         </div>
       </div>

@@ -43,7 +43,7 @@ class Controller_Mtpizza_Auth Extends Controller_Mtpizza_Page
 
     public function action_logout(){
         \Session::delete(self::SESSION_KEY_USER_ID);
-        \Session::delete(self::SESSmtpizza);
+        \Session::delete(self::SESSION_KEY_CART);
     }
 }
 

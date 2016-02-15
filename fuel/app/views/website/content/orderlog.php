@@ -48,7 +48,7 @@
                                         <span><?php echo $total_money?></span>円
                                     </div>
                                     <div class="button">
-                                        <?php echo Html::anchor('index.php/website/cart/historyin/' . $order['id'],'カートに入れる')?>
+                                        <?php echo Html::anchor('mtpizza/cart/historyin/' . $order['id'],'カートに入れる')?>
                                     </div>
                                 </div>
                     <?php endforeach; ?>
