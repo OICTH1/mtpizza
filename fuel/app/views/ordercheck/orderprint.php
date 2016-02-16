@@ -27,6 +27,7 @@
       </div>
     </div>
     <script type="text/javascript">
+    var url = <?php echo "$order->id" ?>;
         $("#qrcode").qrcode({width:100,height:100,text:url});
         window.print();
         var post_url = <?php echo "\"/ordercheck/api/order/print/$order->id\"" ?>;
