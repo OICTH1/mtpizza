@@ -1,3 +1,4 @@
-
-<p>現在ピザどこは開発中です<br/>
-サービス開始までもうしばらくお待ちくださいませ。</p>
+<p>現在、配達中の注文はありません</p>
+<div class="button">
+    <?php echo Html::anchor('index.php/item/list/','メニュー',array('class'=>'link'))?>
+</div>
