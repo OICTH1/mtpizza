@@ -29,7 +29,7 @@
     <script type="text/javascript">
         $("#qrcode").qrcode({width:100,height:100,text:url});
         window.print();
-        var post_url = <?php echo "/ordercheck/api/order/print/$order->id\"" ?>;
+        var post_url = <?php echo "\"/ordercheck/api/order/print/$order->id\"" ?>;
         $.post(post_url,function(){
             window.history.back(-1)
         });
