@@ -7,6 +7,7 @@ class Model_Order extends \Orm\Model
 		'member_id',
 		'staff_id',
 		'destination',
+		'postalcode',
 		'order_date',
 		'print_flag',
 		'status',
