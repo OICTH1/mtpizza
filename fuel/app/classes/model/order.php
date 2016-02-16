@@ -5,7 +5,7 @@ class Model_Order extends \Orm\Model
 	protected static $_properties = array(
 		'id',
 		'member_id',
-		'deliveryman_id',
+		'staff_id',
 		'destination',
 		'order_date',
 		'print_flag',
