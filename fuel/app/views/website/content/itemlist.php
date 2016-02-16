@@ -5,9 +5,9 @@
 	</div>
 	<div class="category">
 		<ul>
-			<li class="category-pizza"><?php echo Html::anchor('index.php/website/item/list/pizza','ピザ',array('class'=>'link'))?></li>
-			<li class="category-drink"><?php echo Html::anchor('index.php/website/item/list/drink','ドリンク',array('class'=>'link'))?></li>
-			<li class="category-side"><?php echo Html::anchor('index.php/website/item/list/side','サイド',array('class'=>'link'))?></li>
+			<li class="category-pizza"><?php echo Html::anchor('mtpizza/item/list/pizza','ピザ',array('class'=>'link'))?></li>
+			<li class="category-drink"><?php echo Html::anchor('mtpizza/website/item/list/drink','ドリンク',array('class'=>'link'))?></li>
+			<li class="category-side"><?php echo Html::anchor('mtpizza/website/item/list/side','サイド',array('class'=>'link'))?></li>
 		</ul>
 	</div>
 	<div class="list">
