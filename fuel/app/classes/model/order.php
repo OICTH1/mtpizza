@@ -42,4 +42,43 @@ class Model_Order extends \Orm\Model
 		),
 	);
 
+	public static function getDetail($order_id){
+		$order = Model_Order::find($order_id);
+
+		foreach ($order->orderline as $orderline) {
+			switch ($orderline->size) {
+				case 'S':
+					$key = 'unit_price_s';
+					break;
+				case 'M':
+					$key = 'unit_price_m';
+					break;
+				case 'L':
+					$key = 'unit_price_l';
+					break;
+				case '':
+					$key = 'unit_price';
+					break;
+			}
+			$detail['orderline'][] = array(
+				'name' => $orderline->item->name,
+				'size' => $orderline->size,
+				'num' => $orderline->num,
+				'price' => $orderline->item[$key],
+			);
+		}
+
+		$detail['customer'] = array(
+				'name' => $order->member->name,
+				'tel' => $order->member->tel,
+		);
+
+		$detail['address'] = array(
+				'postalcode' => $order->postalcode,
+				'destination' => $order->destination,
+		);
+
+		return $detail;
+	}
+
 }
