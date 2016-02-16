@@ -48,5 +48,13 @@ class Model_Staff extends \Orm\Model
 		return $deliverylist;
 	}
 
+	public static function getPostion($staff_id){
+		$staff = Model_Staff::find($staff_id);
+		return array(
+			'lat' => $staff->lat,
+			'long' => $staff->long
+		);
+	}
+
 
 }
