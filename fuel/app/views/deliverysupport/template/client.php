@@ -10,6 +10,12 @@
         		maximum-scale=2.0,
         		user-scalable=yes" />
         <title></title>
+        <style media="screen">
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script type="text/javascript">
             var url = '/DeliverySupport/api/position.json';
