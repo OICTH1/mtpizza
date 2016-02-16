@@ -22,6 +22,9 @@
             </table>
         </div>
         <?php echo Asset::js('jquery-1.11.3.min.js')?>
+        <script type="text/javascript">
+            var url = <?php echo "\"/ordercheck/api/order/list.json\"" ?>;
+        </script>
         <?php echo Asset::js('ordercheck/orderlist.js')?>
     </body>
 </html>
