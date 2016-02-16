@@ -6,9 +6,25 @@
 <br>
 <canvas id="qr-canvas" width="480" height="600"></canvas>
 <?php
-    echo Asset::js(array(
-         'deliverysupport/client/add.js'
-    ));
+
+        echo Asset::js('deliverysupport/qr/grid.js');
+         echo Asset::js('deliverysupport/qr/version.js');
+         echo Asset::js('deliverysupport/qr/detector.js');
+         echo Asset::js('deliverysupport/qr/formatinf.js');
+         echo Asset::js('deliverysupport/qr/errorlevel.js');
+         echo Asset::js('deliverysupport/qr/bitmat.js');
+         echo Asset::js('deliverysupport/qr/datablock.js');
+         echo Asset::js('deliverysupport/qr/bmparser.js');
+         echo Asset::js('deliverysupport/qr/datamask.js');
+         echo Asset::js('deliverysupport/qr/rsdecoder.js');
+         echo Asset::js('deliverysupport/qr/gf256poly.js');
+         echo Asset::js('deliverysupport/qr/gf256.js');
+         echo Asset::js('deliverysupport/qr/decoder.js');
+         echo Asset::js('deliverysupport/qr/QRCode.js');
+         echo Asset::js('deliverysupport/qr/findpat.js');
+         echo Asset::js('deliverysupport/qr/alignpat.js');
+         echo Asset::js('deliverysupport/qr/databr.js');
+         echo Asset::js('deliverysupport/client/add.js');
  ?>
  <script type="text/javascript">
         $('#select_image').change(renderImage);
