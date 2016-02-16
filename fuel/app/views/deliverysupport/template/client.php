@@ -34,8 +34,7 @@
     </head>
     <body>
         <header>
-            <h1><?php echo $title ?></h1>
-            <br><button><?php echo Html::anchor('/DeliverySupport/client/add','配達追加') ?></button>
+            <h1><?php echo $title ?><br><button><?php echo Html::anchor('/DeliverySupport/client/add','配達追加') ?></button></h1>
         </header>
         <section>
             <?php echo $content ?>
