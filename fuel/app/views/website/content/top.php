@@ -12,7 +12,7 @@
               <div><i class="fa fa-book"></i></div><div>メニュー</div><div class="clear"></div>
           </li>
           <li class="imglink">
-              <?php echo Html::anchor('mtpizza/message/pizzadoko','',array(''))?>
+              <?php echo Html::anchor('mtpizza/pizzadoko','',array(''))?>
               <div><i class="fa fa-search"></i></div><div>ピザどこ？</div><div class="clear"></div>
           </li>
         </ul>

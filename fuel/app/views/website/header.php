@@ -30,7 +30,7 @@
                   <ul class="navi-list">
                     <li><?php echo Html::anchor('mtpizza','TOP',array('class'=>'link'))?></li>
                     <li><?php echo Html::anchor('mtpizza/item/list','メニュー',array('class'=>'link'))?></li>
-                    <li><?php echo Html::anchor('mtpizza/message/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
+                    <li><?php echo Html::anchor('mtpizza/pizzadoko','ピザどこ？',array('class'=>'link'))?></li>
                   </ul>
                 </div>
                 <div class="clear">
