@@ -3,7 +3,7 @@
 <div class="heading">
     ご注文内容
 </div>
-<div class="cart">
+<div class="cart body">
     <?php $total = 0;foreach ($order['orderline'] as $orderline): ?>
         <div class="cartin">
             <div class="name">
@@ -15,6 +15,7 @@
             <div class="money">
                 金額￥<span><?php $price = $orderline['num'] * $orderline['price']; $total += $price;echo $price  ?></span>
             </div>
+	    <div class='clear'></div>
         </div>
     <?php endforeach; ?>
     <div class="summoney">
@@ -27,7 +28,7 @@
 <div class="heading">
     配達先
 </div>
-<div class="delivery">
+<div class="delivery body">
     <div class="yubin">
         <?php echo $order['address']['postalcode'] ?>
     </div>
@@ -38,15 +39,14 @@
 <div class="heading">
     Where is my pizza
 </div>
-<div class="whereismypizza">
+<div class="whereismypizza body">
     <div class="map-embed">
         <div id="map-canvas">ここに地図が表示されます</div>
     </div>
 </div>
-<div class="back">
+<div class="button">
     <a class="buttonlink">戻る</a>
 </div>
-<?php echo var_dump($staff) ?>
 <script type="text/javascript">
     var lat = 0+<?php echo $staff['lat'] ?>;
     var long = 0+<?php echo $staff['long'] ?>;
