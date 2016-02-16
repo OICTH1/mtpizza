@@ -1,27 +1,10 @@
-/***** コンテンツ全体 *****/
-
-/***** コンテンツ全体 *****/
-
-/*******見出しの所****/
-.cartheading,.deliveryheading,.whereheading {
-    font-size: 30px;
-    float: left;
-    padding: 6px 0px 6px 0px;
-    border: solid 1px;
-    width: 100%;
-    text-align : center;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
 /******ご注文内容部分*******/
 .cart{
-    float: left;
     border: solid 1px;
     width: 100%;
     box-sizing: border-box;}
 
 .cartin{
-    float: left;
     font-size: 22px;
     width: 100%;
     height: 35px;
@@ -31,7 +14,6 @@
 }
 
 .name{
-    float: left;
     width: 60%;
     height: 100%;
     text-align: center;
@@ -52,7 +34,6 @@
 
 /*合計金額*/
 .summoney{
-    float: left;
     width: 100%;
     height: 35px;
     padding-top: 5px;
@@ -71,7 +52,6 @@
 /******ご注文内容部分*******/
 /**********配達先住所部分***********/
 .delivery{
-    float: left;
     font-size: 22px;
     width: 100%;
     padding: 20px;
@@ -80,13 +60,11 @@
 }
 
 .yubin{
-    float: left;
     width: 100%;
     height: 30px;
 }
 
 .address{
-    float: left;
     width: 100%;
     height: 30px;
 }
@@ -103,9 +81,9 @@
             /*******Googlemap********/
 .map-embed
 {
-    max-width: 100% ;
+    max-width: 90% ;
     height: 0 ;
-    margin: 0 ;
+    margin: 0 auto ;
     padding: 0 0 56.25% ;
 
     overflow: hidden ;
@@ -142,7 +120,6 @@
 /*********確定戻る***********/
 .confirm{
     font-size: 32px;
-    float: left;
     width: 20%;
     margin: 2% 40% 0% 40%;
     text-align : center;
@@ -151,7 +128,6 @@
 
 .back{
     font-size: 28px;
-    float: left;
     width: 20%;
     margin: 2% 40% 1% 40%;
     text-align : center;
