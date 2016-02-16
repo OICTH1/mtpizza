@@ -7,24 +7,7 @@
 <canvas id="qr-canvas" width="480" height="600"></canvas>
 <?php
     echo Asset::js(array(
-        'deliverysupport/qr/grid.js',
-         'deliverysupport/qr/version.js',
-         'deliverysupport/qr/detector.js',
-         'deliverysupport/qr/formatinf.js',
-         'deliverysupport/qr/errorlevel.js',
-         'deliverysupport/qr/bitmat.js',
-         'deliverysupport/qr/datablock.js',
-         'deliverysupport/qr/bmparser.js',
-         'deliverysupport/qr/datamask.js',
-         'deliverysupport/qr/rsdecoder.js',
-         'deliverysupport/qr/gf256poly.js',
-         'deliverysupport/qr/gf256.js',
-         'deliverysupport/qr/decoder.js',
-         'deliverysupport/qr/QRCode.js',
-         'deliverysupport/qr/findpat.js',
-         'deliverysupport/qr/alignpat.js',
-         'deliverysupport/qr/databr.js',
-         '/client/add.js'
+         'deliverysupport/client/add.js'
     ));
  ?>
  <script type="text/javascript">
