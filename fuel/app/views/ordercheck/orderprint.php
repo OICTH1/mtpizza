@@ -3,20 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style media="screen">
-        .print-btn{
-            padding: 10px;
-            font-size: 24px;
-            border: solid 2px;
-            border-radius: 10px;
-        }
-
-        .print-btn > a{
-            width: 100%;
-            text-decoration: none;
-            color: #000;
-        }
-    </style>
+    <?php echo Asset::css('ordercheck/content/orderprint.css') ?>
     <?php echo Asset::js('jquery-1.11.3.min.js') ?>
     <?php echo Asset::js('jquery.qrcode.min.js') ?>
   </head>
