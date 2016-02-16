@@ -1,4 +1,4 @@
-<?php echo Asset::css('content/whereismypizza.css') ?>
+<?php echo Asset::css('website/content/whereismypizza.css') ?>
 
 <div class="heading">
     ご注文内容
@@ -52,4 +52,4 @@
     var long = 0+<?php echo $staff['long'] ?>;
 </script>
 <?php echo Asset::js("https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCQellvVcqIZwpn0xtU0Vrc5SBLWnTt8") ?>
-<?php echo Asset::js('content/whereismypizza.js') ?>
+<?php echo Asset::js('website/content/whereismypizza.js') ?>
