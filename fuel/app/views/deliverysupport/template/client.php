@@ -18,7 +18,7 @@
         </style>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script type="text/javascript">
-            var url = '/deliverySupport/api/position.json';
+            var url = 'deliverySupport/api/position.json';
             setInterval(function(){
                 navigator.geolocation.getCurrentPosition(function(place){
                     var data = {
