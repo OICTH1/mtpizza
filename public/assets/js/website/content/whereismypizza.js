@@ -10,7 +10,6 @@ var mapOptions = {
     scrollwheel:false,
     draggable:false,
     center: latlng ,		// 中心座標 [latlng]
-    
 };
 
 // [canvas]に、[mapOptions]の内容の、地図のインスタンス([map])を作成する
@@ -23,7 +22,11 @@ var map = new google.maps.Map( canvas , mapOptions ) ;
 var markers = [] ;
 
 // マーカーのインスタンスを作成する
-markers[0] = new google.maps.Marker({
-    map: map ,
-    position: new google.maps.LatLng( long , lat ) ,
-}) ;
+setInterval(function () {
+    $.post('/mtpizza/api/getPosition',{staff_id:staff_id},function(latlng){
+        markers[0] = new google.maps.Marker({
+            map: map ,
+            position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
+        }) ;
+    });
+}, 2000);

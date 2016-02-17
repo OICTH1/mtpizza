@@ -14,7 +14,7 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 			$deliveryid_list = array($order_id);
 		}
 		$order = Model_Order::find($order_id);
-		$order->deliveryman_id = Session::get(self::LOGIN);
+		$order->staff_id = Session::get(self::LOGIN);
 		$order->save();
 		Session::set(self::DELIVERYID_LIST,$deliveryid_list);
 		return $deliveryid_list;

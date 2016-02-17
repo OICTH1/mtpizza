@@ -21,9 +21,8 @@ class Controller_Mtpizza_Pizzadoko extends Controller_Mtpizza_Page
     			'long' => 135.518526
     		);
         } else {
-            $data['staff'] = Model_Staff::getPostion($order->deliveryman_id);
+            $data['staff'] = Model_Staff::getPostion($order->staff_id)['staff_id'] = $order->staff_id;
         }
-        $data['staff'] = Model_Staff::getPostion($order->staff_id);
         $data['order'] = Model_Order::getDetail($order->id);
         $this->template->content =View::forge('website/content/whereismypizza',$data);
 
