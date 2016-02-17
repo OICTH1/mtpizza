@@ -35,7 +35,7 @@ getPostion(staff_id,function(latlng){
         getPostion(staff_id,function(latlng){
             $.post('/deliverysupport/api/testposition.json',{
                 staff_id:1,
-                lat:latlng.lat+1,
+                lat:latlng.lat+0.00001,
                 long:latlng.long
             },function(result){
 
