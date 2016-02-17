@@ -38,12 +38,11 @@ getPostion(staff_id,function(latlng){
                 lat:latlng.lat+0.00001,
                 long:latlng.long
             },function(result){
-
+                markers[0] = new google.maps.Marker({
+                    map: map ,
+                    position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
+                }) ;
             });
-            markers[0] = new google.maps.Marker({
-                map: map ,
-                position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
-            }) ;
         });
     }, 1000);
 });
