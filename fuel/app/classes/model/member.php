@@ -16,7 +16,7 @@ class Model_Member extends \Orm\Model
 	);
 
 
-	protected static $_table_name = 'tbl_member';
+	protected static $_table_name = 'tbl_members';
 
 	protected static $_has_many = array(
 		'orders' => array(

@@ -13,10 +13,10 @@
         </div>
         <div class="return">
           <div class="top">
-            <p><?php echo Html::anchor('index.php/controlsystem/top','トップに戻る') ?></p>
+            <p><?php echo Html::anchor('/controlsystem/top','トップに戻る') ?></p>
           </div>
           <div class="back">
-            <p><?php echo Html::anchor('index.php/controlsystem/members/infosearch','戻る') ?></p>
+            <p><?php echo Html::anchor('/controlsystem/members/infosearch','戻る') ?></p>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
             <tr>
               <td id="time"><?php echo substr($order->order_date, 0,11) ?></td>
               <td>
-                <?php echo Html::anchor('index.php/controlsystem/members/history/detail/'.$order->id,'詳細') ?>
+                <?php echo Html::anchor('/controlsystem/members/history/detail/'.$order->id,'詳細') ?>
               </td>
             </tr>
           <?php endforeach;?>

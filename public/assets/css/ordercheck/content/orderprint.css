@@ -1,0 +1,48 @@
+html,body{
+        margin: 0;
+        padding: 0;
+}
+body > div{
+    padding: 0px 5px 10px 5px;
+    border: solid 1px;
+    box-sizing: border-box;
+}
+.No{
+  float: left;
+}
+.datetime{
+  float: right;
+  text-align: center;
+  border-bottom:
+}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+th{
+    border: solid 1px;
+}
+
+table{
+    border: solid 1px;
+}
+
+th:not(:last-child){
+  border-right:solid 1px
+}
+td:not(:first-child){
+  text-align: center;
+}
+td > p{
+  margin: 4px 0px
+}
+#qrcode {
+  margin: 0 auto;
+}
+#bc{
+  width:272px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 5px;
+}

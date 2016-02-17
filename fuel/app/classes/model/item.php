@@ -16,7 +16,7 @@ class Model_Item extends \Orm\Model
 	);
 
 
-	protected static $_table_name = 'tbl_item';
+	protected static $_table_name = 'tbl_items';
 
 	protected static $_has_one = array(
 		'img' => array(

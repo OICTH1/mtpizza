@@ -11,7 +11,7 @@ class Model_Orderline extends \Orm\Model
 	);
 
 
-	protected static $_table_name = 'tbl_orderline';
+	protected static $_table_name = 'tbl_orderlines';
 
 	protected static $_has_one = array(
 		'item' => array(

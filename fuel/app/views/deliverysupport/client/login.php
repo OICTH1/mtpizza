@@ -1,4 +1,4 @@
-<?php  echo Form::Open('client/auth')?>
+<?php  echo Form::Open('/deliverysupport/client/auth')?>
 <div class="form_staffNo">
     <h3>社員番号</h3>
     <input type="text" name="input_staffNo" value="" maxlength="3">

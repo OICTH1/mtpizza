@@ -9,9 +9,9 @@ function renderImage(ev){
             var dataUrl = file.target.result;
             image.src = dataUrl;
             image.onload = function() {
-                canvas.width = image.width;
-                canvas.height = image.height;
-                context.drawImage(image, 0, 0 ,this.width, this.height, 0, 0, canvas.width, canvas.height);
+                //canvas.width = image.width  / 8;
+                //canvas;
+                context.drawImage(image, 0, 0 ,canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
             }
         }
         reader.readAsDataURL(item);

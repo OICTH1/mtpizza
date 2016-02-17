@@ -7,8 +7,8 @@ class Controller_Deliverysupport_Client_Auth extends Controller_Template
 
     public function action_index(){
         if(isset($_POST['input_staffNo'])){
-                $staffNo = $_POST['input_staffNo'];
-                if(!empty($staff = Model_Staff::isExist($staffNo))){
+                $staff_id = $_POST['input_staffNo'];
+                if(!empty($staff = Model_Staff::find($staff_id))){
                     Session::set(self::LOGIN,$staff->id);
                     return Response::redirect('deliverysupport/client');
                 } else {

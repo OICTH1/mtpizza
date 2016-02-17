@@ -85,7 +85,7 @@
       </div>
       <div class="content_bottom">
         <div class="result">
-          <!--<?php echo Form::Open(array('action' => 'index.php/members/history', 'method' => 'post')); ?>-->
+          <!--<?php echo Form::Open(array('action' => 'index.php/controlsystem/embers/history', 'method' => 'post')); ?>-->
           <table id="m_result" rules="rows" cellpadding="10">
             <thead class="table_head">
               <tr>

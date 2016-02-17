@@ -13,10 +13,10 @@
         </div>
         <div class="return">
           <div class="top">
-            <p><?php echo Html::anchor('index.php/controlsystem/top','トップに戻る') ?></p>
+            <p><?php echo Html::anchor('/controlsystem/top','トップに戻る') ?></p>
           </div>
           <div class="back">
-            <p><?php echo Html::anchor('index.php/controlsystem/members/history/index/'.$member->id,'戻る') ?></p>
+            <p><?php echo Html::anchor('/controlsystem/members/history/index/'.$member->id,'戻る') ?></p>
           </div>
         </div>
       </div>

@@ -5,9 +5,9 @@
 	</div>
 	<div class="category">
 		<ul>
-			<li class="category-pizza"><?php echo Html::anchor('index.php/website/item/list/pizza','ピザ',array('class'=>'link'))?></li>
-			<li class="category-drink"><?php echo Html::anchor('index.php/website/item/list/drink','ドリンク',array('class'=>'link'))?></li>
-			<li class="category-side"><?php echo Html::anchor('index.php/website/item/list/side','サイド',array('class'=>'link'))?></li>
+			<li class="category-pizza"><?php echo Html::anchor('mtpizza/item/list/pizza','ピザ',array('class'=>'link'))?></li>
+			<li class="category-drink"><?php echo Html::anchor('mtpizza/item/list/drink','ドリンク',array('class'=>'link'))?></li>
+			<li class="category-side"><?php echo Html::anchor('mtpizza/item/list/side','サイド',array('class'=>'link'))?></li>
 		</ul>
 	</div>
 	<div class="list">
@@ -16,7 +16,7 @@
 	            <div class="listitem">
 	                <div class="img imglink">
 	                  <?php echo Asset::img($item['img_path']);?>
-					  <?php echo Html::anchor('imtpizza/item/detail/' . $item['item_id'],'',array())?>
+					  <?php echo Html::anchor('mtpizza/item/detail/' . $item['item_id'],'',array())?>
 	                </div>
 	                <div class="pizzaname"><?php echo $item['item_name']?></div>
 					<div class="pricelist">
