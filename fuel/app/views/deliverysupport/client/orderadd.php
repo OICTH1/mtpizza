@@ -20,7 +20,7 @@
          echo Asset::js('deliverysupport/qr/gf256poly.js');
          echo Asset::js('deliverysupport/qr/gf256.js');
          echo Asset::js('deliverysupport/qr/decoder.js');
-         echo Asset::js('deliverysupport/qr/QRCode.js');
+         echo Asset::js('deliverysupport/qr/qrcode.js');
          echo Asset::js('deliverysupport/qr/findpat.js');
          echo Asset::js('deliverysupport/qr/alignpat.js');
          echo Asset::js('deliverysupport/qr/databr.js');
