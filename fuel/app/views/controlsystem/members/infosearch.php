@@ -32,7 +32,7 @@
                       cells[0].textContent = res[key].name;
                       cells[1].textContent = res[key].tel;
                       cells[2].textContent = res[key].address;
-                      cells[3].innerHTML = "<a href=/mtpizza/public/index.php/controlsystem/members/history/index/"+res[key].id+">注文履歴</a>";
+                      cells[3].innerHTML = "<a href=/controlsystem/members/history/index/"+res[key].id+">注文履歴</a>";
                       template.parentNode.appendChild(clone);
                     });
                 },
@@ -85,7 +85,7 @@
       </div>
       <div class="content_bottom">
         <div class="result">
-          <!--<?php echo Form::Open(array('action' => 'index.php/members/history', 'method' => 'post')); ?>-->
+          <!--<?php echo Form::Open(array('action' => 'index.php/controlsystem/embers/history', 'method' => 'post')); ?>-->
           <table id="m_result" rules="rows" cellpadding="10">
             <thead class="table_head">
               <tr>
