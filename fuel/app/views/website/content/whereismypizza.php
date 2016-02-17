@@ -48,8 +48,9 @@
     <a class="buttonlink">戻る</a>
 </div>
 <script type="text/javascript">
-    var lat = 0+<?php echo $staff['lat'] ?>;
-    var long = 0+<?php echo $staff['long'] ?>;
+    <?php if(isset($staff['staff_id'])) :?>
+        var staff_id = <?php echo $staff['staff_id'] ?>;
+    <?php endif; ?>
 </script>
 <?php echo Asset::js("https://maps.googleapis.com/maps/api/js?key=AIzaSyAGCQellvVcqIZwpn0xtU0Vrc5SBLWnTt8") ?>
 <?php echo Asset::js('website/content/whereismypizza.js') ?>

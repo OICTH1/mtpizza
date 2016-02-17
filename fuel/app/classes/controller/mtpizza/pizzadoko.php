@@ -11,17 +11,18 @@ class Controller_Mtpizza_Pizzadoko extends Controller_Mtpizza_Page
 
     public function action_index()
     {
-        $user_id = Session::get(self::SESSION_KEY_USER_ID);
+        $user_id = \Session::get(self::SESSION_KEY_USER_ID);
         $order = Model_Order::query()->where('member_id',$user_id)->where('status',false)->order_by('order_date','desc')->get_one();
+        //return $this->template->content =var_dump($user_id);
         if(empty($order)){
-            return Response::redirect('mtpizza/message/pizadoko');
+            return Response::redirect('mtpizza/message/pizzadoko');
         } else if(empty($order->staff_id)){
             $data['staff'] = array(
     			'lat' => 135.518526,
     			'long' => 34.663749
    		);
         } else {
-            $data['staff_id'] = $order->staff_id;
+            $data['staff']['staff_id'] = $order->staff_id;
         }
         $data['order'] = Model_Order::getDetail($order->id);
         $this->template->content = View::forge('website/content/whereismypizza',$data);

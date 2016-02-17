@@ -40,7 +40,8 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 	public function post_position(){
 		if(empty(Session::get(self::LOGIN))){
 			return array(
-				'status' => 'NG'
+				'status' => 'NG',
+				'id' => $_POST['lat']
 			);
 		}
 		$staff_id = Session::get(self::LOGIN);

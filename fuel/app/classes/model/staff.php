@@ -25,8 +25,8 @@ class Model_Staff extends \Orm\Model
 
 	protected static $_table_name = 'tbl_staffs';
 
-	public static function isExist($staffNo){
-		$staff = Model_Staff::query()->where('staffNo',$staffNo)->get_one();
+	public static function isExist($staff_id){
+		$staff = Model_Staff::query()->where('id',$staff_id)->get_one();
 		if(!empty($staff)){
 			return $staff;
 		}

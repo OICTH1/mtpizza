@@ -34,7 +34,7 @@ class Controller_Deliverysupport_Client extends Controller_Template
 
     //test code
     public function action_delete(){
-        Session::destroy();
+        //Session::destroy();
         return Response::redirect('client');
     }
 }

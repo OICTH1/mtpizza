@@ -23,7 +23,7 @@
     </tbody>
 </table>
 <h2>配達先住所</h2>
-<?php echo $detail['address'] ?>
+<?php echo $detail['address']['destination'] ?>
 <button type="button" name="button" id="searchRoot">ルート検索</button>
 <div id="map_canvas" style="width: 320px; height: 400px;"></div>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=places"></script>
@@ -51,7 +51,7 @@
 
     var searchbtn =  document.getElementById('searchRoot');
     searchbtn.onclick = function(){
-        var address = <?php echo "\"" . $detail['address'] . "\""?>;
+        var address = <?php echo "\"" . $detail['address']['destination'] . "\""?>;
         toGeocode(address);
     }
 
