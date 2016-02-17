@@ -18,7 +18,7 @@
           <div><?php echo Html::anchor('index.php/controlsystem/order/order','戻る') ?></div>
         </div>
       </div>
-      <div style="clear:both">
+      <div style="clear:both"></div>
     </div>
     <div class="content">
       <div class="content_top">
@@ -76,7 +76,7 @@
         <div class="buttons">
             <div><?php echo Html::anchor('index.php/controlsystem/order/order','再編集') ?></div>
             <div><?php echo Html::anchor('index.php/controlsystem/top','キャンセル') ?></div>
-            <div><input type="submit" name="submit" value="注文"></div>
+            <div><input type="submit" name="submit" value="注文"</div>
         </div>
         <?php echo Form::close()?>
       </div>
