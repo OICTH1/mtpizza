@@ -24,8 +24,7 @@
                         var cells = clone.querySelectorAll('td');
                         cells[0].textContent = res[key].name;
                         cells[1].textContent = res[key].category;
-                        cells[2].textContent = res[key].price;
-                        cells[3].innerHTML = "<a href=/controlsystem/members/history/index/"+res[key].id+">注文履歴</a>";
+                        cells[2].innerHTML = "<a href=/controlsystem/members/history/index/"+res[key].id+">注文履歴</a>";
                         template.parentNode.appendChild(clone);
                       });
                   },
@@ -80,7 +79,6 @@
                 <tr>
                   <td id="item_name"></td>
                   <td></td>
-                  <td id="money"></td>
                   <td></td>
                 </tr>
             </template>
