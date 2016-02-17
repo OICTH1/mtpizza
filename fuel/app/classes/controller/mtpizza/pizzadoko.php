@@ -15,16 +15,16 @@ class Controller_Mtpizza_Pizzadoko extends Controller_Mtpizza_Page
         $order = Model_Order::query()->where('member_id',$user_id)->where('status',false)->order_by('order_date','desc')->get_one();
         if(empty($order)){
             return Response::redirect('mtpizza/message/pizadoko');
-        } else if($order->staff_id == ''){
+        } else if(empty($order->staff_id)){
             $data['staff'] = array(
-    			'lat' => 34.663749,
-    			'long' => 135.518526
-    		);
+    			'lat' => 135.518526,
+    			'long' => 34.663749
+   		);
         } else {
             $data['staff'] = Model_Staff::getPostion($order->staff_id)['staff_id'] = $order->staff_id;
         }
         $data['order'] = Model_Order::getDetail($order->id);
-        $this->template->content =View::forge('website/content/whereismypizza',$data);
+        $this->template->content = View::forge('website/content/whereismypizza',$data);
 
     }
 }

@@ -8,7 +8,7 @@
     <?php echo Asset::js('jquery.qrcode.min.js') ?>
   </head>
   <body >
-    <div style="width:282px;height:400px;position:absolute">
+    <div style="width:282px;height:700px;position:absolute">
       <h3 class="clearfix" style="margin-bottom:10px;"><span class="No"><?php echo sprintf('No.%04d',$order->id) ?></span><span class="datetime"><?php echo $order->order_date ?></span></h3>
       <table id="order" style="width:100%;" >
         <thead>
