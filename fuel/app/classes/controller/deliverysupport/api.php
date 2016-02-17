@@ -54,13 +54,14 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 		);
 	}
 
-	public function post_testposition(staff_id){
+	public function post_testposition(){
 		/*if(empty(Session::get(self::LOGIN))){
 			return array(
 				'status' => 'NG',
 				'id' => $_POST['lat']
 			);
 		}*/
+		$staff_id = $_POST['staff_id'];
 		$staff = Model_Staff::find($staff_id);
 		$staff->lat = $_POST['lat'];
 		$staff->long = $_POST['long'];
