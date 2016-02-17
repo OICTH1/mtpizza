@@ -33,10 +33,10 @@ getPostion(staff_id,function(latlng){
     setInterval(function(){
         console.log('hpge');
         getPostion(staff_id,function(latlng){
-	    markers[0] = new google.maps.Marker({
-       		map: map ,
-                position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
-            }) ;
+                markers[0] = new google.maps.Marker({
+                    map: map ,
+                    position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
+                });
         });
-    }, 3000);
+    }, 2000);
 });
