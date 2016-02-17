@@ -48,7 +48,7 @@
     //デバッグ用
     (function(i){
             var order_id = i;
-            var url = '/mtpizza/deliverysupport/api/addOrder';
+            var url = '/deliverysupport/api/addOrder';
             var data = {order_id:order_id};
 
             $.post(url,data,function(res){
@@ -56,7 +56,7 @@
                 console.log(res);
                 (function(i){
                         var order_id = i;
-                        var url = '/mtpizza/deliverysupport/api/addOrder';
+                        var url = '/deliverysupport/api/addOrder';
                         var data = {order_id:order_id};
 
                         $.post(url,data,function(res){
