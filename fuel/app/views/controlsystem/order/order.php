@@ -107,16 +107,16 @@
 		<div class="content_bottom">
 			<div class="content_bottom_left">
 				<form class="indexlist_form">
-				<label class="indexlist" id='a'><input type="radio" name="index" value="a" class="indexlist_item" checked="checked">あ</label><br>
-				<label class="indexlist" id='k'><input type="radio" name="index" value="k" class="indexlist_item">か</label><br>
-				<label class="indexlist" id='s'><input type="radio" name="index" value="s" class="indexlist_item">さ</label><br>
-				<label class="indexlist" id='t'><input type="radio" name="index" value="t" class="indexlist_item">た</label><br>
-				<label class="indexlist" id='n'><input type="radio" name="index" value="n" class="indexlist_item">な</label><br>
-				<label class="indexlist" id='h'><input type="radio" name="index" value="h" class="indexlist_item">は</label><br>
-				<label class="indexlist" id='m'><input type="radio" name="index" value="m" class="indexlist_item">ま</label><br>
-				<label class="indexlist" id='y'><input type="radio" name="index" value="y" class="indexlist_item">や</label><br>
-				<label class="indexlist" id='r'><input type="radio" name="index" value="r" class="indexlist_item">ら</label><br>
-				<label class="indexlist" id='w'><input type="radio" name="index" value="w" class="indexlist_item">わ</label><br>
+				<label class="indexlist" id='a'><input type="radio" name="index" value="a" class="indexlist_item" checked="checked">あ</label>
+				<label class="indexlist" id='k'><input type="radio" name="index" value="k" class="indexlist_item">か</label>
+				<label class="indexlist" id='s'><input type="radio" name="index" value="s" class="indexlist_item">さ</label>
+				<label class="indexlist" id='t'><input type="radio" name="index" value="t" class="indexlist_item">た</label>
+				<label class="indexlist" id='n'><input type="radio" name="index" value="n" class="indexlist_item">な</label>
+				<label class="indexlist" id='h'><input type="radio" name="index" value="h" class="indexlist_item">は</label>
+				<label class="indexlist" id='m'><input type="radio" name="index" value="m" class="indexlist_item">ま</label>
+				<label class="indexlist" id='y'><input type="radio" name="index" value="y" class="indexlist_item">や</label>
+				<label class="indexlist" id='r'><input type="radio" name="index" value="r" class="indexlist_item">ら</label>
+				<label class="indexlist" id='w'><input type="radio" name="index" value="w" class="indexlist_item">わ</label>
 			</form>
 			</div>
 			<div class="content_bottom_center">
