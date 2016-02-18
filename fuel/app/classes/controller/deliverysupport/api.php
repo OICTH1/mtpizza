@@ -34,6 +34,10 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 		);
 	}
 
+	public function post_reset(){
+		Session::set(self::DELIVERYID_LIST,array());
+		return array('status' => 'OK', );
+	}
 	public function post_deleteOrder(){
 		$order_id = $_POST['order_id'];
 		$deliveryid_list = Session::get(self::DELIVERYID_LIST);

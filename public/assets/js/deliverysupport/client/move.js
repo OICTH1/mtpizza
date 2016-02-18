@@ -25,7 +25,7 @@ function init(){
 }
 
 function postPosition(lat,lng){
-    $.post('/mtpizza/deliverysupport/api/testposition.json',{
+    $.post('/deliverysupport/api/testposition.json',{
         staff_id:1,
         lat:lat,
         lng:lng,
