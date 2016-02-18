@@ -28,5 +28,6 @@ class Controller_Mtpizza_Pizzadoko extends Controller_Mtpizza_Page
         $this->template->content = View::forge('website/content/whereismypizza',$data);
 
     }
+
 }
  ?>

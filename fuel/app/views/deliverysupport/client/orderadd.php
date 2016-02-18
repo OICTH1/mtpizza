@@ -7,7 +7,7 @@
 <canvas id="qr-canvas" width="480" height="600"></canvas>
 <?php
 
-        echo Asset::js('deliverysupport/qr/grid.js');
+         echo Asset::js('deliverysupport/qr/grid.js');
          echo Asset::js('deliverysupport/qr/version.js');
          echo Asset::js('deliverysupport/qr/detector.js');
          echo Asset::js('deliverysupport/qr/formatinf.js');

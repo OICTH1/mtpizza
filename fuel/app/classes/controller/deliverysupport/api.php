@@ -64,7 +64,7 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 		$staff_id = $_POST['staff_id'];
 		$staff = Model_Staff::find($staff_id);
 		$staff->lat = $_POST['lat'];
-		$staff->long = $_POST['long'];
+		$staff->long = $_POST['lng'];
 		$staff->save();
 		return array(
 			'status' => 'OK'

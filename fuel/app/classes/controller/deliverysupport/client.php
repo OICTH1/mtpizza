@@ -5,6 +5,8 @@ class Controller_Deliverysupport_Client extends Controller_Template
     public $template = 'deliverysupport/template/client';
     const LOGIN = 'login';
     public function before(){
+        //demo code
+        Session::set(self::LOGIN,1);
         parent::before();
         if(empty(Session::get(self::LOGIN))){
             return Response::redirect('deliverysupport/client/auth');
@@ -32,6 +34,11 @@ class Controller_Deliverysupport_Client extends Controller_Template
         $this->template->content = View::forge('deliverysupport/client/orderadd');
     }
 
+    //demo code
+    public function action_move(){
+        $this->template->title = '疑似移動';
+        $this->template->content = View::forge('deliverysupport/client/move');
+    }
     //test code
     public function action_delete(){
         //Session::destroy();
