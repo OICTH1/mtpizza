@@ -17,6 +17,7 @@
                   success: function( res )
                   {
                     console.log(res);
+                    $('#item_result').find("tr:gt(0)").remove();
                     var template = document.querySelector('#item_result');
 
                       Object.keys(res).forEach(function(key){
@@ -24,7 +25,6 @@
                         var cells = clone.querySelectorAll('td');
                         cells[0].textContent = res[key].name;
                         cells[1].textContent = res[key].category;
-                        cells[2].innerHTML = "<a href=/controlsystem/members/history/index/"+res[key].id+">注文履歴</a>";
                         template.parentNode.appendChild(clone);
                       });
                   },
@@ -71,14 +71,12 @@
               <tr>
                 <th id="item_name">商品名</th>
                 <th>カテゴリー</th>
-                <th></th>
               </tr>
             </thead>
             <tbody class="table_scroll">
               <template id="item_result">
                 <tr>
                   <td id="item_name"></td>
-                  <td></td>
                   <td></td>
                 </tr>
             </template>
