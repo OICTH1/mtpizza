@@ -26,9 +26,9 @@ function init(){
 $('.move_btn').click(function(){
     var ope = $(this).val();
     if($(this).hasClass('height')){
-        lat = lat + (0.01 * ope);
+        lat = lat + (0.001 * ope);
     } else if($(this).hasClass('width')){
-        lng = lng + (0.01 * ope);
+        lng = lng + (0.001 * ope);
     }
     $('#latval').text(lat);
     $('#lngval').text(lng);
