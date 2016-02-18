@@ -8,16 +8,30 @@ class Controller_Deliverysupport_Api extends Controller_Rest
 	public function post_addOrder(){
 		$order_id = $_POST['order_id'];
 		$deliveryid_list = Session::get(self::DELIVERYID_LIST);
-		if(!empty($deliveryid_list)){
+		if(empty($deliveryid_list)){
+			$deliveryid_list = array($order_id);
+		} else if(!in_array($order_id,$deliveryid_list)){
 			$deliveryid_list[] = $order_id;
 		} else {
-			$deliveryid_list = array($order_id);
+			return  array(
+				'status' => false,
+				'message' => '「注文番号：' . $order_id . '」は既に追加されています。'
+			 );
 		}
 		$order = Model_Order::find($order_id);
-		$order->staff_id = Session::get(self::LOGIN);
+		if(empty($order)){
+			return  array(
+				'status' => false,
+				'message' => '「注文番号：' . $order_id . '」は存在しません。'
+			 );
+		}
+		$order->staff_id = 1;//Session::get(self::LOGIN);
 		$order->save();
 		Session::set(self::DELIVERYID_LIST,$deliveryid_list);
-		return $deliveryid_list;
+		return array(
+			'status' => true,
+			'message' => in_array($order_id,$deliveryid_list),
+		);
 	}
 
 	public function post_deleteOrder(){

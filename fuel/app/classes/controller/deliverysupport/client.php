@@ -36,7 +36,7 @@ class Controller_Deliverysupport_Client extends Controller_Template
 
     //demo code
     public function action_move(){
-        $this->template->title = '疑似移動';
+        $this->template->title = '移動';
         $this->template->content = View::forge('deliverysupport/client/move');
     }
     //test code

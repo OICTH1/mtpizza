@@ -21,6 +21,17 @@ function init(){
      });
      $('#latval').text(lat);
      $('#lngval').text(lng);
+     postPosition(lat,lng);
+}
+
+function postPosition(lat,lng){
+    $.post('/mtpizza/deliverysupport/api/testposition.json',{
+        staff_id:1,
+        lat:lat,
+        lng:lng,
+    },function(res){
+        console.log(res);
+    });
 }
 
 $('.move_btn').click(function(){
@@ -35,11 +46,5 @@ $('.move_btn').click(function(){
     var latlng = new google.maps.LatLng(lat, lng);
     marker.setPosition(latlng);
     map.panTo(latlng);
-    $.post('/mtpizza/deliverysupport/api/testposition.json',{
-        staff_id:1,
-        lat:lat,
-        lng:lng,
-    },function(res){
-        console.log(res);
-    });
+    postPosition(lat,lng);
 });

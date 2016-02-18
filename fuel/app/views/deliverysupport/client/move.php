@@ -1,6 +1,21 @@
 <?php echo Asset::css('deliverysupport/move.css') ?>
+<style media="screen">
+    #map_move td{
+        text-align: center;
+    }
+
+    button.move_btn{
+        font-size: 24px;
+    }
+    .width{
+        padding: 10px 20px;
+    }
+    .height{
+        padding: 10px 24px;
+    }
+</style>
 <p>
-    緯度：<span id="latval"></span>経度：<span id="lngval"></span>
+    緯度：<span id="latval"></span><br>経度：<span id="lngval"></span>
 </p>
 <table id='map_move'>
     <tbody>
