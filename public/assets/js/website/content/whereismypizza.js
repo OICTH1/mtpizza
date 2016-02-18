@@ -33,7 +33,6 @@ getPostion(staff_id,function(latlng){
     setInterval(function(){
         console.log('hpge');
         getPostion(staff_id,function(latlng){
-            console.log(latlng);
             markers[0] = new google.maps.Marker({
                 map: map ,
                 position: new google.maps.LatLng( latlng.long , latlng.lat ) ,

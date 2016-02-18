@@ -86,7 +86,7 @@ tbody{
   height:0;
   border: 16px solid transparent;
   border-bottom-color: #999;
-	margin-bottom: 194px;
+	margin-bottom: 182px;
 }
 
 .downscroll{
@@ -192,8 +192,10 @@ background-color: rgb(105, 104, 150);
 
 .indexlist{
 	border: solid 1px;
-	margin: 6px;
+	margin: 3px;
 	padding: 4px;
+	width: 26px;
+	display: block;
 	font-size: 27px;
 }
 
