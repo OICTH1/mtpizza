@@ -17,24 +17,17 @@
             }
         </style>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript">
-            var url = '/deliverySupport/api/position.json';
-            setInterval(function(){
-                navigator.geolocation.getCurrentPosition(function(place){
-                    var data = {
-                        'lat':place.coords.latitude,
-                        'long':place.coords.longitude
-                    };
-                    $.post(url,data,function(result){
-                        console.log(result);
-                    });
-                });
-            },2000);
-        </script>
     </head>
     <body>
         <header>
-            <h1><?php echo $title ?><br><button><?php echo Html::anchor('/DeliverySupport/client/add','配達追加') ?></button></h1>
+            <h1><?php echo $title ?></h1>
+            <nav>
+                <ul>
+                    <li><?php echo Html::anchor('deliverysupport/client','一覧') ?></li>
+                    <li><?php echo Html::anchor('deliverysupport/client/add','追加') ?></li>
+                    <li><?php echo Html::anchor('deliverysupport/client/move','移動') ?></li>
+                </ul>
+            </nav>
         </header>
         <section>
             <?php echo $content ?>

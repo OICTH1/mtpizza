@@ -11,32 +11,25 @@ getPostion(staff_id,function(latlng){
     // 地図のオプションを設定する
     var mapOptions = {
         zoom: 15 ,				// ズーム値
-        scrollwheel:false,
+        //scrollwheel:false,
         draggable:false,
-        center: new google.maps.LatLng(latlng.long , latlng.lat) ,		// 中心座標 [latlng]
+        center: new google.maps.LatLng(latlng.lat , latlng.long) ,		// 中心座標 [latlng]
     };
 
     // [canvas]に、[mapOptions]の内容の、地図のインスタンス([map])を作成する
     var map = new google.maps.Map( canvas , mapOptions ) ;
 
-    // [canvas]に、[mapOptions]の内容の、地図のインスタンス([map])を作成する
-    var map = new google.maps.Map( canvas , mapOptions ) ;
-
-    // マーカーのインスタンスは配列で管理しよう
-    var markers = [] ;
-
     // マーカーのインスタンスを作成する
-    markers[0] = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         map: map ,
-        position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
+        position: new google.maps.LatLng( latlng.lat , latlng.long ) ,
     }) ;
     setInterval(function(){
         console.log('hpge');
         getPostion(staff_id,function(latlng){
-            markers[0] = new google.maps.Marker({
-                map: map ,
-                position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
-            }) ;
+            var ll = new google.maps.LatLng( latlng.lat , latlng.long );
+            marker.setPosition(ll);
+            map.panTo(ll);
         });
-    }, 1000);
+    }, 100);
 });
