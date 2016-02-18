@@ -33,13 +33,7 @@ getPostion(staff_id,function(latlng){
     setInterval(function(){
         console.log('hpge');
         getPostion(staff_id,function(latlng){
-            $.post('/deliverysupport/api/testposition.json',{
-                staff_id:1,
-                lat:0.00001+latlng.lat,
-                long:latlng.long
-            },function(result){
-
-            });
+            console.log(latlng);
             markers[0] = new google.maps.Marker({
                 map: map ,
                 position: new google.maps.LatLng( latlng.long , latlng.lat ) ,
