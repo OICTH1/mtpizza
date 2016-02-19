@@ -109,13 +109,13 @@ tbody.table_scroll {
 td,th{
   border-collapse: collapse;
 	text-align: center;
-	width: 285px;
+	width: 400px;
   font-size: 20px;
   padding: 10px 0;
 }
 #item_name
 {
-  width: 400px;
+  width: 570px;
 }
 .content_bottom input[type="button"]
 {
